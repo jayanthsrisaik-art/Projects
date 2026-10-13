@@ -1,0 +1,16 @@
+$ python -m taskgraph -f samples/demo/tasks.toml graph
+wave 0: banner, sort
+wave 1: stats
+wave 2: all
+
+$ python -m taskgraph -f samples/demo/tasks.toml run      # first run
+[    ran] banner
+[    ran] sort
+[    ran] stats
+[    ran] all
+
+$ python -m taskgraph -f samples/demo/tasks.toml run      # second run, nothing changed
+[ cached] banner
+[ cached] sort
+[ cached] stats
+[ cached] all

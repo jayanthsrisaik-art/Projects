@@ -1,0 +1,3 @@
+t=0 {'delivered': 0, 'retried': 1, 'dead': 0}
+t=30 {'delivered': 1, 'retried': 0, 'dead': 0}
+{"status": "delivered", "attempts": 2, "last_status_code": 200}

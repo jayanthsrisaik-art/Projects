@@ -1,0 +1,6 @@
+POST /endpoints   {"url":"http://127.0.0.1:9000/hook","secret":"demo-secret-123","event_types":["order.created"]}
+  -> 201 {"id":1}
+POST /events      {"idempotency_key":"order-1","type":"order.created","data":{"order_id":1}}
+  -> 202 {"created_deliveries":[1]}      (repeat -> {"created_deliveries":[]})
+POST /worker/run-once
+  -> {"delivered":1,"retried":0,"dead":0}

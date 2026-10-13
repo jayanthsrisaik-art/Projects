@@ -1,0 +1,22 @@
+# Tiny build pipeline: words.txt -> sorted -> stats, plus an independent "banner".
+[task.sort]
+description = "sort the word list"
+cmd = ["python3", "-c", "import pathlib;pathlib.Path('build').mkdir(exist_ok=True);pathlib.Path('build/sorted.txt').write_text(''.join(sorted(open('words.txt').readlines())))"]
+inputs = ["words.txt"]
+outputs = ["build/sorted.txt"]
+
+[task.stats]
+description = "count unique words"
+cmd = ["python3", "-c", "print(len(set(open('build/sorted.txt').read().split())))"]
+deps = ["sort"]
+inputs = ["build/sorted.txt"]
+# no outputs declared: re-run is decided by fingerprint alone
+
+[task.banner]
+description = "independent task"
+cmd = "python3 -c \"print('hello from banner')\""
+
+[task.all]
+description = "everything"
+cmd = ["python3", "-c", "print('done')"]
+deps = ["stats", "banner"]

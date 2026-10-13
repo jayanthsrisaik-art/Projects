@@ -1,0 +1,21 @@
+member_id|branch_id|region|credit_score|address|share_accounts
+M001|B04|West|620|769 Oak St|2
+M002|B02|North|590|152 Oak St|3
+M003|B01|North|790|768 Oak St|3
+M004|B01|North|760|442 Oak St|1
+M005|B01|North|600|233 Oak St|1
+M006|B01|North|750|213 Oak St|3
+M007|B04|West|650|469 Oak St|3
+M008|B03|South|580|787 Oak St|1
+M009|B04|West|680|294 Oak St|1
+M010|B02|North|680|114 Oak St|1
+M011|B04|West|610|377 Oak St|2
+M012|B03|South|590|757 Oak St|2
+M013|B01|North|700|90 Oak St|3
+M014|B03|South|780|643 Oak St|2
+M015|B02|North|600|56 Oak St|3
+M016|B02|North|670|91 Oak St|1
+M017|B01|North|700|294 Oak St|2
+M018|B03|South|630|389 Oak St|2
+M019|B02|North|790|283 Oak St|3
+M020|B01|North|770|660 Oak St|1

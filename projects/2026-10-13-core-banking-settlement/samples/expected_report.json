@@ -1,0 +1,68 @@
+{
+  "files_loaded": 16,
+  "files_quarantined": [],
+  "rejected_rows": 1,
+  "audit": {
+    "20260831-ACH": "BALANCED",
+    "20260831-CORE": "BALANCED",
+    "20260901-ACH": "BALANCED",
+    "20260901-CORE": "BALANCED",
+    "20260902-ACH": "BALANCED",
+    "20260902-CORE": "UNBALANCED",
+    "20260903-ACH": "UNBALANCED",
+    "20260903-CORE": "BALANCED"
+  },
+  "fact_rows": 88,
+  "notifications": [
+    "2 settlement batch(es) failed reconciliation and are held back: 20260902-CORE, 20260903-ACH"
+  ],
+  "delinquency": [
+    {
+      "product": "Auto",
+      "total_cents": 15858500,
+      "d30_plus": 0.0,
+      "d60_plus": 0.0,
+      "d90_plus": 0.0
+    },
+    {
+      "product": "HELOC",
+      "total_cents": 21597500,
+      "d30_plus": 0.1717,
+      "d60_plus": 0.1717,
+      "d90_plus": 0.1717
+    },
+    {
+      "product": "Mortgage",
+      "total_cents": 24406500,
+      "d30_plus": 0.0,
+      "d60_plus": 0.0,
+      "d90_plus": 0.0
+    },
+    {
+      "product": "Personal",
+      "total_cents": 12823300,
+      "d30_plus": 0.2312,
+      "d60_plus": 0.0,
+      "d90_plus": 0.0
+    }
+  ],
+  "penetration": {
+    "members": 20,
+    "share_accounts": 40,
+    "loan_accounts": 14,
+    "share_to_loan_ratio": 2.86,
+    "pct_members_with_loan": 0.7
+  },
+  "deposit_velocity": [
+    {
+      "month": "2026-08",
+      "deposits_cents": 1402227,
+      "mom_change": null
+    },
+    {
+      "month": "2026-09",
+      "deposits_cents": 2171535,
+      "mom_change": 0.5486
+    }
+  ]
+}

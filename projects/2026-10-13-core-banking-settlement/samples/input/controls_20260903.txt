@@ -1,0 +1,3 @@
+batch_id|control_debits|control_credits
+20260903-ACH|8206.04|8206.04
+20260903-CORE|8893.83|8893.83

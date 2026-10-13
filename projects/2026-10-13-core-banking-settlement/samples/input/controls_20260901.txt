@@ -1,0 +1,3 @@
+batch_id|control_debits|control_credits
+20260901-ACH|9253.13|9253.13
+20260901-CORE|10072.72|10072.72

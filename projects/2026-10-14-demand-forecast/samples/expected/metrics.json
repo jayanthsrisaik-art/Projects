@@ -1,0 +1,313 @@
+{
+  "config": {
+    "days": 365,
+    "seed": 42,
+    "horizon": 24,
+    "n_folds": 4,
+    "test_days": 21,
+    "val_days": 28,
+    "gap_hours": 0,
+    "temp_noise_std": 1.5,
+    "quantiles": [
+      0.1,
+      0.9
+    ],
+    "tune": true
+  },
+  "feature_warmup_rows": 504,
+  "folds": [
+    {
+      "fold": 0,
+      "train_rows": 6240,
+      "test_rows": 504,
+      "train_end": "2024-10-07 23:00:00",
+      "test_start": "2024-10-08 00:00:00",
+      "test_end": "2024-10-28 23:00:00",
+      "hgb_params": {
+        "learning_rate": 0.1,
+        "max_leaf_nodes": 31,
+        "max_iter": 200
+      },
+      "metrics": {
+        "seasonal_naive_24h": {
+          "mae": 13.007936507936508,
+          "rmse": 20.311072904691237,
+          "wape": 0.3049727869004977
+        },
+        "seasonal_naive_168h": {
+          "mae": 7.192460317460317,
+          "rmse": 9.88876627353981,
+          "wape": 0.16862818067637345
+        },
+        "ridge": {
+          "mae": 6.264731566209087,
+          "rmse": 8.537402553909718,
+          "wape": 0.14687745775547192
+        },
+        "hist_gradient_boosting": {
+          "mae": 6.478251027526585,
+          "rmse": 8.722219998955907,
+          "wape": 0.15188344968476525
+        },
+        "ensemble_ridge_hgb": {
+          "mae": 6.232488295736398,
+          "rmse": 8.464865560188784,
+          "wape": 0.14612151002703375
+        }
+      },
+      "interval": {
+        "coverage": 0.6468253968253969,
+        "mean_width": 15.678293880372895,
+        "pinball_lo": 1.7653336950437635,
+        "pinball_hi": 1.3799608554725646
+      }
+    },
+    {
+      "fold": 1,
+      "train_rows": 6744,
+      "test_rows": 504,
+      "train_end": "2024-10-28 23:00:00",
+      "test_start": "2024-10-29 00:00:00",
+      "test_end": "2024-11-18 23:00:00",
+      "hgb_params": {
+        "learning_rate": 0.1,
+        "max_leaf_nodes": 31,
+        "max_iter": 200
+      },
+      "metrics": {
+        "seasonal_naive_24h": {
+          "mae": 11.956349206349206,
+          "rmse": 17.735602253703913,
+          "wape": 0.32128385583280017
+        },
+        "seasonal_naive_168h": {
+          "mae": 6.755952380952381,
+          "rmse": 9.1641771511218,
+          "wape": 0.18154190658989122
+        },
+        "ridge": {
+          "mae": 6.019053686887995,
+          "rmse": 8.126381198929003,
+          "wape": 0.16174040617357374
+        },
+        "hist_gradient_boosting": {
+          "mae": 6.2563537807405405,
+          "rmse": 8.310288373137245,
+          "wape": 0.1681169921888053
+        },
+        "ensemble_ridge_hgb": {
+          "mae": 6.029945890149924,
+          "rmse": 8.028600826250269,
+          "wape": 0.16203309493685017
+        }
+      },
+      "interval": {
+        "coverage": 0.6924603174603174,
+        "mean_width": 15.732234032978536,
+        "pinball_lo": 1.394531375693543,
+        "pinball_hi": 1.3324536996387837
+      }
+    },
+    {
+      "fold": 2,
+      "train_rows": 7248,
+      "test_rows": 504,
+      "train_end": "2024-11-18 23:00:00",
+      "test_start": "2024-11-19 00:00:00",
+      "test_end": "2024-12-09 23:00:00",
+      "hgb_params": {
+        "learning_rate": 0.1,
+        "max_leaf_nodes": 31,
+        "max_iter": 200
+      },
+      "metrics": {
+        "seasonal_naive_24h": {
+          "mae": 10.371031746031745,
+          "rmse": 15.72084098481507,
+          "wape": 0.31380200516299456
+        },
+        "seasonal_naive_168h": {
+          "mae": 6.132936507936508,
+          "rmse": 8.489839866121207,
+          "wape": 0.18556762922495046
+        },
+        "ridge": {
+          "mae": 5.500641679997145,
+          "rmse": 7.309600077412516,
+          "wape": 0.16643593724671674
+        },
+        "hist_gradient_boosting": {
+          "mae": 5.446411594903401,
+          "rmse": 7.424640984755698,
+          "wape": 0.16479506776918496
+        },
+        "ensemble_ridge_hgb": {
+          "mae": 5.3211199261985715,
+          "rmse": 7.177455330064425,
+          "wape": 0.16100404891661646
+        }
+      },
+      "interval": {
+        "coverage": 0.7023809523809523,
+        "mean_width": 14.851069675153575,
+        "pinball_lo": 1.2432721727556715,
+        "pinball_hi": 1.2464796885776304
+      }
+    },
+    {
+      "fold": 3,
+      "train_rows": 7752,
+      "test_rows": 504,
+      "train_end": "2024-12-09 23:00:00",
+      "test_start": "2024-12-10 00:00:00",
+      "test_end": "2024-12-30 23:00:00",
+      "hgb_params": {
+        "learning_rate": 0.1,
+        "max_leaf_nodes": 31,
+        "max_iter": 200
+      },
+      "metrics": {
+        "seasonal_naive_24h": {
+          "mae": 10.015873015873016,
+          "rmse": 14.882609431550083,
+          "wape": 0.33432677660772236
+        },
+        "seasonal_naive_168h": {
+          "mae": 5.920634920634921,
+          "rmse": 7.930251502246879,
+          "wape": 0.1976289820517915
+        },
+        "ridge": {
+          "mae": 4.952962999217357,
+          "rmse": 6.702062234111109,
+          "wape": 0.1653283894036392
+        },
+        "hist_gradient_boosting": {
+          "mae": 4.912977163008582,
+          "rmse": 6.742330665118667,
+          "wape": 0.1639936744258776
+        },
+        "ensemble_ridge_hgb": {
+          "mae": 4.760111154588561,
+          "rmse": 6.544804997962647,
+          "wape": 0.1588910538388393
+        }
+      },
+      "interval": {
+        "coverage": 0.7142857142857143,
+        "mean_width": 14.465992874910135,
+        "pinball_lo": 1.1822483431091348,
+        "pinball_hi": 1.127996196975718
+      }
+    }
+  ],
+  "summary": {
+    "seasonal_naive_24h": {
+      "mae": {
+        "mean": 11.3378,
+        "std": 1.2098
+      },
+      "rmse": {
+        "mean": 17.1625,
+        "std": 2.0927
+      },
+      "wape": {
+        "mean": 0.3186,
+        "std": 0.0108
+      }
+    },
+    "seasonal_naive_168h": {
+      "mae": {
+        "mean": 6.5005,
+        "std": 0.5038
+      },
+      "rmse": {
+        "mean": 8.8683,
+        "std": 0.7335
+      },
+      "wape": {
+        "mean": 0.1833,
+        "std": 0.0104
+      }
+    },
+    "ridge": {
+      "mae": {
+        "mean": 5.6843,
+        "std": 0.5044
+      },
+      "rmse": {
+        "mean": 7.6689,
+        "std": 0.7119
+      },
+      "wape": {
+        "mean": 0.1601,
+        "std": 0.0078
+      }
+    },
+    "hist_gradient_boosting": {
+      "mae": {
+        "mean": 5.7735,
+        "std": 0.628
+      },
+      "rmse": {
+        "mean": 7.7999,
+        "std": 0.7698
+      },
+      "wape": {
+        "mean": 0.1622,
+        "std": 0.0062
+      }
+    },
+    "ensemble_ridge_hgb": {
+      "mae": {
+        "mean": 5.5859,
+        "std": 0.5847
+      },
+      "rmse": {
+        "mean": 7.5539,
+        "std": 0.7442
+      },
+      "wape": {
+        "mean": 0.157,
+        "std": 0.0064
+      }
+    }
+  },
+  "best_model_by_mae": "ensemble_ridge_hgb",
+  "interval_summary": {
+    "coverage": {
+      "mean": 0.689,
+      "std": 0.0255
+    },
+    "mean_width": {
+      "mean": 15.1819,
+      "std": 0.5411
+    },
+    "pinball_lo": {
+      "mean": 1.3963,
+      "std": 0.2266
+    },
+    "pinball_hi": {
+      "mean": 1.2717,
+      "std": 0.0958
+    }
+  },
+  "segment_wape": {
+    "weekday": {
+      "rows": 1440,
+      "seasonal_naive_24h": 0.2605,
+      "seasonal_naive_168h": 0.1807,
+      "ridge": 0.158,
+      "hist_gradient_boosting": 0.16,
+      "ensemble_ridge_hgb": 0.1556
+    },
+    "weekend_or_holiday": {
+      "rows": 576,
+      "seasonal_naive_24h": 0.5132,
+      "seasonal_naive_168h": 0.1863,
+      "ridge": 0.1629,
+      "hist_gradient_boosting": 0.1673,
+      "ensemble_ridge_hgb": 0.1591
+    }
+  }
+}

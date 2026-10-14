@@ -1,0 +1,1 @@
+{"days": 365, "seed": 42, "n_folds": 4, "test_days": 21, "val_days": 28, "temp_noise_std": 1.5, "quantiles": [0.1, 0.9], "tune": true}

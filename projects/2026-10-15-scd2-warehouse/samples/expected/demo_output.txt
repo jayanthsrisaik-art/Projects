@@ -1,0 +1,22 @@
+2026-01-01: loaded
+2026-01-02: loaded
+2026-01-04: loaded
+2026-01-03: loaded
+--- check
+OK: all invariants hold
+--- history 1
+sk,customer_id,name,email,tier,city,valid_from,valid_to,is_current
+1,1,Asha Rao,asha@example.com,silver,Pune,2026-01-01,2026-01-02,0
+2,1,Asha Rao,asha@example.com,gold,Pune,2026-01-02,2026-01-03,0
+3,1,Asha Rao,asha@example.com,gold,Mumbai,2026-01-03,,1
+--- history 4
+sk,customer_id,name,email,tier,city,valid_from,valid_to,is_current
+6,4,Dara Cole,dara@example.com,bronze,Dublin,2026-01-01,2026-01-03,0
+7,4,Dara Cole,dara@example.com,bronze,Dublin,2026-01-04,,1
+--- as-of 2026-01-02
+customer_id,name,email,tier,city
+1,Asha Rao,asha@example.com,gold,Pune
+2,Ben Okoye,ben@example.com,bronze,Lagos
+3,Chen Wei,chen@example.com,gold,Shanghai
+4,Dara Cole,dara@example.com,bronze,Dublin
+5,Eli Stone,eli@example.com,bronze,Austin

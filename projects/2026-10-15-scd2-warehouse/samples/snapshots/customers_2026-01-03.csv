@@ -1,0 +1,5 @@
+customer_id,name,email,tier,city
+1,Asha Rao,asha@example.com,gold,Mumbai
+2,Ben Okoye,ben@example.com,bronze,Lagos
+3,Chen Wei,chen@example.com,gold,Shanghai
+5,Eli Stone,eli@example.com,silver,Austin

@@ -1,0 +1,4 @@
+bob = 26
+carol = (nil)
+alice = 30
+bob = 26

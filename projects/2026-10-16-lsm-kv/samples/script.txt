@@ -1,0 +1,8 @@
+put alice 30
+put bob 25
+put carol 41
+put bob 26
+del carol
+get bob
+get carol
+scan

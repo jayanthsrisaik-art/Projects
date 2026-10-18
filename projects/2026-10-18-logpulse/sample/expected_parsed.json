@@ -1,0 +1,105 @@
+[
+ {
+  "service": "api",
+  "level": "INFO",
+  "template": "request GET /users/<*> completed in <*> status=<*>",
+  "latency_ms": 45.0
+ },
+ {
+  "service": "billing",
+  "level": "INFO",
+  "template": "invoice <*> charged amount <*> usd",
+  "latency_ms": null
+ },
+ {
+  "service": "billing",
+  "level": "INFO",
+  "template": "invoice <*> charged amount <*> usd",
+  "latency_ms": null
+ },
+ {
+  "service": "api",
+  "level": "INFO",
+  "template": "request GET /users/<*> completed in <*> status=<*>",
+  "latency_ms": 38.0
+ },
+ {
+  "service": "billing",
+  "level": "INFO",
+  "template": "request GET /items/<*> completed in <*> status=<*>",
+  "latency_ms": 60.0
+ },
+ {
+  "service": "api",
+  "level": "INFO",
+  "template": "request GET /items/<*> completed in <*> status=<*>",
+  "latency_ms": 51.0
+ },
+ {
+  "service": "billing",
+  "level": "INFO",
+  "template": "invoice <*> charged amount <*> usd",
+  "latency_ms": null
+ },
+ {
+  "service": "billing",
+  "level": "INFO",
+  "template": "invoice <*> charged amount <*> usd",
+  "latency_ms": null
+ },
+ {
+  "service": "billing",
+  "level": "INFO",
+  "template": "invoice <*> charged amount <*> usd",
+  "latency_ms": null
+ },
+ {
+  "service": "billing",
+  "level": "INFO",
+  "template": "request GET /orders/<*> completed in <*> status=<*>",
+  "latency_ms": 29.0
+ },
+ {
+  "service": "api",
+  "level": "INFO",
+  "template": "request GET /users/<*> completed in <*> status=<*>",
+  "latency_ms": 46.0
+ },
+ {
+  "service": "api",
+  "level": "INFO",
+  "template": "request GET /users/<*> completed in <*> status=<*>",
+  "latency_ms": 27.0
+ },
+ {
+  "service": "api",
+  "level": "ERROR",
+  "template": "db connection pool exhausted active=<*> waiting=<*>",
+  "latency_ms": null
+ },
+ {
+  "service": "billing",
+  "level": "ERROR",
+  "template": "db connection pool exhausted active=<*> waiting=<*>",
+  "latency_ms": null
+ },
+ {
+  "service": "billing",
+  "level": "ERROR",
+  "template": "db connection pool exhausted active=<*> waiting=<*>",
+  "latency_ms": null
+ },
+ {
+  "service": "api",
+  "level": "INFO",
+  "template": "cache warmup finished entries=<*>",
+  "latency_ms": null
+ },
+ {
+  "service": "api",
+  "level": "INFO",
+  "template": "cache warmup finished entries=<*>",
+  "latency_ms": null
+ },
+ null
+]

@@ -1,0 +1,28 @@
+{
+  "lines": 36991,
+  "incidents": 14,
+  "zscore": {
+    "precision": 1.0,
+    "recall": 0.3076923076923077,
+    "f1": 0.47058823529411764,
+    "tp": 20,
+    "fp": 0,
+    "fn": 45,
+    "average_precision": 0.3376292509530596,
+    "incidents_in_test": 6,
+    "incidents_detected": 2,
+    "test_windows": 1713
+  },
+  "iforest": {
+    "precision": 0.5454545454545454,
+    "recall": 0.09230769230769231,
+    "f1": 0.15789473684210525,
+    "tp": 6,
+    "fp": 5,
+    "fn": 59,
+    "average_precision": 0.6117366731936154,
+    "incidents_in_test": 6,
+    "incidents_detected": 3,
+    "test_windows": 1713
+  }
+}

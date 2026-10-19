@@ -1,0 +1,53 @@
+{
+  "verifier": "lexical",
+  "faithfulness": 0.5,
+  "counts": {
+    "supported": 3,
+    "unsupported": 1,
+    "contradicted": 2
+  },
+  "claims": [
+    {
+      "claim": "Mount Alder is 2,140 metres tall.",
+      "label": "supported",
+      "reason": "coverage 1.00",
+      "source": "mount_alder.txt",
+      "evidence": "Mount Alder is 2,140 metres tall and sits in the Northern Range."
+    },
+    {
+      "claim": "It is located in the Northern Range.",
+      "label": "supported",
+      "reason": "coverage 0.67",
+      "source": "mount_alder.txt",
+      "evidence": "Mount Alder is 2,140 metres tall and sits in the Northern Range."
+    },
+    {
+      "claim": "The first recorded ascent happened in 1873.",
+      "label": "contradicted",
+      "reason": "number 1873 not in evidence",
+      "source": "mount_alder.txt",
+      "evidence": "The first recorded ascent was in 1893 by a survey team."
+    },
+    {
+      "claim": "The visitor centre opens daily at 10 a.m.",
+      "label": "contradicted",
+      "reason": "number 10 not in evidence",
+      "source": "mount_alder.txt",
+      "evidence": "A visitor centre at the base opens daily at 8 a.m."
+    },
+    {
+      "claim": "Adults pay 12 dollars to enter the park.",
+      "label": "supported",
+      "reason": "coverage 0.67",
+      "source": "mount_alder.txt",
+      "evidence": "Entry to the park costs 12 dollars for adults."
+    },
+    {
+      "claim": "Guided night hikes are offered at the summit every Friday.",
+      "label": "unsupported",
+      "reason": "coverage 0.14 below threshold",
+      "source": "mount_alder.txt",
+      "evidence": "The summit is closed to climbers between November and March because of avalanche risk."
+    }
+  ]
+}

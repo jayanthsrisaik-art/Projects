@@ -1,0 +1,58 @@
+{"id": "alder-01", "source": "alder", "claim": "Mount Alder is 2,140 metres tall.", "label": "supported"}
+{"id": "alder-02", "source": "alder", "claim": "Mount Alder is located in the Northern Range.", "label": "supported"}
+{"id": "alder-03", "source": "alder", "claim": "A survey team made the first recorded ascent in 1893.", "label": "supported"}
+{"id": "alder-04", "source": "alder", "claim": "The first recorded ascent happened in 1873.", "label": "contradicted"}
+{"id": "alder-05", "source": "alder", "claim": "Mount Alder is 3,140 metres tall.", "label": "contradicted"}
+{"id": "alder-06", "source": "alder", "claim": "Climbers cannot go to the summit from November to March due to avalanche risk.", "label": "supported"}
+{"id": "alder-07", "source": "alder", "claim": "Guided night hikes are offered at the summit every Friday.", "label": "unsupported"}
+{"id": "alder-08", "source": "alder", "claim": "The visitor centre opens daily at 10 a.m.", "label": "contradicted"}
+{"id": "alder-09", "source": "alder", "claim": "Parking at the base costs 5 dollars.", "label": "unsupported"}
+{"id": "alder-10", "source": "alder", "claim": "Adults pay 12 dollars to enter the park.", "label": "supported"}
+{"id": "alder-11", "source": "alder", "claim": "Entry to the park is free for adults.", "label": "contradicted"}
+{"id": "voltra-01", "source": "voltra", "claim": "The Voltra X pack stores 60 kilowatt-hours of energy.", "label": "supported"}
+{"id": "voltra-02", "source": "voltra", "claim": "The Voltra X battery pack stores 75 kilowatt-hours of energy.", "label": "contradicted"}
+{"id": "voltra-03", "source": "voltra", "claim": "Fast charging reaches 80 percent capacity in 35 minutes.", "label": "supported"}
+{"id": "voltra-04", "source": "voltra", "claim": "Fast charging restores 80 percent of capacity in 20 minutes.", "label": "contradicted"}
+{"id": "voltra-05", "source": "voltra", "claim": "The battery is warranted for eight years or 160,000 kilometres.", "label": "supported"}
+{"id": "voltra-06", "source": "voltra", "claim": "The Voltra X supports bidirectional charging.", "label": "contradicted"}
+{"id": "voltra-07", "source": "voltra", "claim": "The pack does not support bidirectional charging.", "label": "supported"}
+{"id": "voltra-08", "source": "voltra", "claim": "The Voltra X battery uses solid-state cells.", "label": "unsupported"}
+{"id": "voltra-09", "source": "voltra", "claim": "Cold weather cuts usable range by about 20 percent.", "label": "supported"}
+{"id": "voltra-10", "source": "voltra", "claim": "The battery pack weighs 450 kilograms.", "label": "unsupported"}
+{"id": "library-01", "source": "library", "claim": "Members can borrow ten books at a time.", "label": "supported"}
+{"id": "library-02", "source": "library", "claim": "Members may borrow up to five books at a time.", "label": "contradicted"}
+{"id": "library-03", "source": "library", "claim": "Loans last 21 days and can be renewed twice.", "label": "supported"}
+{"id": "library-04", "source": "library", "claim": "Standard loans can be renewed four times.", "label": "contradicted"}
+{"id": "library-05", "source": "library", "claim": "Overdue items incur a fine of 0.25 dollars per day.", "label": "supported"}
+{"id": "library-06", "source": "library", "claim": "Lost books are charged at double the replacement cost.", "label": "unsupported"}
+{"id": "library-07", "source": "library", "claim": "Reference books may leave the building.", "label": "contradicted"}
+{"id": "library-08", "source": "library", "claim": "Children under twelve need a parent's signature to register.", "label": "supported"}
+{"id": "library-09", "source": "library", "claim": "The library is open until 9 p.m. on weekdays.", "label": "unsupported"}
+{"id": "report-01", "source": "report", "claim": "Revenue grew 14 percent in 2024 to 82 million dollars.", "label": "supported"}
+{"id": "report-02", "source": "report", "claim": "Revenue grew 4 percent in 2024.", "label": "contradicted"}
+{"id": "report-03", "source": "report", "claim": "Operating costs rose 9 percent, driven mainly by hiring in engineering.", "label": "supported"}
+{"id": "report-04", "source": "report", "claim": "The company plans to open an office in Berlin next year.", "label": "unsupported"}
+{"id": "report-05", "source": "report", "claim": "The company opened offices in Lisbon and Toronto.", "label": "supported"}
+{"id": "report-06", "source": "report", "claim": "The company opened offices in Lisbon and Madrid.", "label": "contradicted"}
+{"id": "report-07", "source": "report", "claim": "Headcount ended the year at 410 employees.", "label": "supported"}
+{"id": "report-08", "source": "report", "claim": "Headcount ended the year at 450 employees.", "label": "contradicted"}
+{"id": "report-09", "source": "report", "claim": "The company paid a dividend.", "label": "contradicted"}
+{"id": "medicine-01", "source": "medicine", "claim": "Take one tablet twice daily with food.", "label": "supported"}
+{"id": "medicine-02", "source": "medicine", "claim": "Take one tablet twice daily on an empty stomach.", "label": "contradicted"}
+{"id": "medicine-03", "source": "medicine", "claim": "Do not take more than four tablets in 24 hours.", "label": "supported"}
+{"id": "medicine-04", "source": "medicine", "claim": "You can take up to eight tablets in 24 hours.", "label": "contradicted"}
+{"id": "medicine-05", "source": "medicine", "claim": "Drowsiness is a common side effect.", "label": "supported"}
+{"id": "medicine-06", "source": "medicine", "claim": "Store the tablets below 25 degrees Celsius.", "label": "supported"}
+{"id": "medicine-07", "source": "medicine", "claim": "The tablets should be stored below 30 degrees Celsius.", "label": "contradicted"}
+{"id": "medicine-08", "source": "medicine", "claim": "The medicine is safe to take during pregnancy.", "label": "unsupported"}
+{"id": "medicine-09", "source": "medicine", "claim": "It is not recommended for children under six.", "label": "supported"}
+{"id": "medicine-10", "source": "medicine", "claim": "It is recommended for children under six.", "label": "contradicted"}
+{"id": "flood-01", "source": "flood", "claim": "The Marlow river flooded in March after three days of heavy rain.", "label": "supported"}
+{"id": "flood-02", "source": "flood", "claim": "The Marlow river flooded in April after three days of heavy rain.", "label": "contradicted"}
+{"id": "flood-03", "source": "flood", "claim": "Water levels peaked at 4.8 metres on March 14.", "label": "supported"}
+{"id": "flood-04", "source": "flood", "claim": "Water levels peaked at 6.8 metres.", "label": "contradicted"}
+{"id": "flood-05", "source": "flood", "claim": "About 300 residents were evacuated from the lower district.", "label": "supported"}
+{"id": "flood-06", "source": "flood", "claim": "The flood caused an estimated 2 million dollars in damage.", "label": "unsupported"}
+{"id": "flood-07", "source": "flood", "claim": "The old stone bridge was closed during the flood.", "label": "contradicted"}
+{"id": "flood-08", "source": "flood", "claim": "Embankment repairs should be completed in August.", "label": "supported"}
+{"id": "flood-09", "source": "flood", "claim": "The mayor declared a state of emergency.", "label": "unsupported"}

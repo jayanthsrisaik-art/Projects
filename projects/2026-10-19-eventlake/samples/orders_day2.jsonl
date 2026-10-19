@@ -1,0 +1,4 @@
+{"event_id":"e7","event_time":"2026-03-03T08:00:00Z","customer_id":7,"status":"created","amount":15}
+{"event_id":"e5","event_time":"2026-03-02T03:00:00Z","customer_id":5,"status":"paid","amount":42}
+{"event_id":"e8","event_time":"2026-02-27T08:00:00Z","customer_id":8,"status":"paid","amount":8}
+{"event_id":"e9","event_time":"2026-03-02T22:00:00Z","customer_id":9,"status":"cancelled","amount":0}

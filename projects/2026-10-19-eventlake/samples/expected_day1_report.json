@@ -1,0 +1,22 @@
+{
+  "accepted": 3,
+  "duplicates": 1,
+  "invalid": 3,
+  "late": 0,
+  "malformed": 1,
+  "partitions": [
+    "dt=2026-03-01",
+    "dt=2026-03-02"
+  ],
+  "quarantine_reasons": {
+    "amount: below min 0": 1,
+    "event_time: expected timestamp": 1,
+    "malformed_json": 1,
+    "status: not in enum": 1
+  },
+  "read": 8,
+  "unknown_fields": {
+    "channel": 1
+  },
+  "watermark": "2026-03-01T03:00:00+00:00"
+}

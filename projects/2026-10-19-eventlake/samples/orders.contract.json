@@ -1,0 +1,13 @@
+{
+  "name": "orders",
+  "key": "event_id",
+  "time_field": "event_time",
+  "fields": [
+    {"name": "event_id", "type": "string"},
+    {"name": "event_time", "type": "timestamp"},
+    {"name": "customer_id", "type": "int"},
+    {"name": "status", "type": "string", "enum": ["created", "paid", "shipped", "cancelled"]},
+    {"name": "amount", "type": "float", "min": 0, "max": 100000},
+    {"name": "coupon", "type": "string", "required": false}
+  ]
+}

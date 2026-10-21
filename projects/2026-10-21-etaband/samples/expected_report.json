@@ -1,0 +1,51 @@
+{
+  "config": {
+    "n_orders": 4768,
+    "seed": 0,
+    "alpha": 0.1,
+    "target_coverage": 0.9,
+    "split_sizes": [
+      2860,
+      954,
+      954
+    ]
+  },
+  "models": {
+    "ridge_split_conformal": {
+      "coverage": 0.8962,
+      "mean_width_min": 18.25,
+      "interval_score": 30.827,
+      "point_mae_min": 4.439,
+      "segment_coverage": {
+        "normal": 0.9735,
+        "rain": 0.7727,
+        "rush": 0.8889
+      },
+      "worst_segment_coverage": 0.7727
+    },
+    "quantile_gbm_raw": {
+      "coverage": 0.8952,
+      "mean_width_min": 16.571,
+      "interval_score": 22.348,
+      "point_mae_min": 4.09,
+      "segment_coverage": {
+        "normal": 0.9301,
+        "rain": 0.8678,
+        "rush": 0.8687
+      },
+      "worst_segment_coverage": 0.8678
+    },
+    "cqr_gbm": {
+      "coverage": 0.8973,
+      "mean_width_min": 16.789,
+      "interval_score": 22.34,
+      "point_mae_min": 4.09,
+      "segment_coverage": {
+        "normal": 0.9349,
+        "rain": 0.8678,
+        "rush": 0.8687
+      },
+      "worst_segment_coverage": 0.8678
+    }
+  }
+}

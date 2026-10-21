@@ -1,0 +1,11 @@
+# uvicorn app:app   then repeat these; /login allows 3 per 60s (sliding_log)
+POST http://127.0.0.1:8000/login
+# 4th call within 60s -> 429 {"error":"rate_limited","retry_after_seconds":N} + Retry-After header
+
+###
+GET http://127.0.0.1:8000/search?q=x
+X-API-Key: demo
+
+###
+GET http://127.0.0.1:8000/health
+# exempt: no RateLimit-* headers

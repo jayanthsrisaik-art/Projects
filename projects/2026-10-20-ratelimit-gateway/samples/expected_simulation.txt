@@ -1,0 +1,15 @@
+limit=10 per 10s
+
+boundary_burst
+  algorithm        accepted  max in any 10s
+  fixed_window           20              20
+  sliding_log            10              10
+  sliding_counter        10              10
+  token_bucket           11              11
+
+steady_overload
+  algorithm        accepted  max in any 10s
+  fixed_window           30              11
+  sliding_log            30              10
+  sliding_counter        28              10
+  token_bucket           39              19

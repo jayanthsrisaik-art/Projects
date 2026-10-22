@@ -1,0 +1,11 @@
+OK       raw_customers  seed, 4 rows
+OK       raw_orders  seed, 6 rows
+OK       stg_customers  view
+OK       stg_orders  view
+OK       customer_ltv  table
+OK       daily_revenue  created
+PASS     unique:raw_orders.order_id  
+PASS     not_null:customer_ltv.name  
+PASS     accepted_values:stg_orders.status  
+PASS     relationships:stg_orders.customer_id  
+PASS     sql:daily_revenue  

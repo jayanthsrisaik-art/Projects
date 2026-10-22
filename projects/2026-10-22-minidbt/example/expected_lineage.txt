@@ -1,0 +1,4 @@
+stg_customers [view] <- raw_customers
+stg_orders [view] <- raw_orders
+customer_ltv [table] <- stg_customers, stg_orders
+daily_revenue [incremental] <- stg_orders

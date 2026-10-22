@@ -1,0 +1,27 @@
+[[test]]
+type = "unique"
+model = "raw_orders"
+column = "order_id"
+
+[[test]]
+type = "not_null"
+model = "customer_ltv"
+column = "name"
+
+[[test]]
+type = "accepted_values"
+model = "stg_orders"
+column = "status"
+values = ["paid", "refunded"]
+
+[[test]]
+type = "relationships"
+model = "stg_orders"
+column = "customer_id"
+to = "stg_customers"
+to_column = "customer_id"
+
+[[test]]
+type = "sql"
+model = "daily_revenue"
+query = "SELECT * FROM daily_revenue WHERE revenue < 0"

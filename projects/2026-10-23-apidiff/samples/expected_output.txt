@@ -1,0 +1,11 @@
+[BREAKING] path-removed: /pets/{id} - path removed
+[BREAKING] type-changed: GET /pets -> 200 [application/json][].id - type integer -> string
+[BREAKING] enum-value-added: GET /pets -> 200 [application/json][].status - response enum values added: ['pending']
+[BREAKING] property-removed: GET /pets -> 200 [application/json][].tag - response property removed
+[BREAKING] constraint-changed: GET /pets query:limit - maximum 100 -> 50
+[BREAKING] param-added-required: GET /pets query:owner - new required parameter
+[BREAKING] response-removed: POST /pets -> 400 - response status removed
+[BREAKING] constraint-changed: POST /pets requestBody [application/json].name - maxLength 50 -> 20
+[SAFE    ] path-added: /health - path added
+
+8 breaking, 0 warning, 1 safe

@@ -1,0 +1,9 @@
+Quartz Office Goods
+Invoice No: INV-2024-8779
+Invoice Date: 24.07.2024
+Item Qty x Price = Amount
+Widget A 8 x 188,08 = 1.504,64
+Hex Bolt M8 8 x 937,04 = 7.496,32
+Net total 9.000,96 EUR
+VAT 10% 900,10 EUR
+Amount due: 9.901,06 EUR

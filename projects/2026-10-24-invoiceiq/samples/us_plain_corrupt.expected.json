@@ -1,0 +1,17 @@
+{
+  "invoice_number": "INV-2024-6605",
+  "invoice_date": "2024-06-18",
+  "vendor": "Blue Harbor Supply",
+  "currency": "USD",
+  "line_items": [
+    {
+      "description": "USB-C Hub",
+      "quantity": "4",
+      "unit_price": "61.00",
+      "amount": "244.00"
+    }
+  ],
+  "subtotal": "244.00",
+  "tax": "24.40",
+  "total": "268.40"
+}

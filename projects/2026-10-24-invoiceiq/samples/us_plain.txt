@@ -1,0 +1,10 @@
+Northwind Traders
+INVOICE #R-2024-7993
+Date: 2024-01-31
+Bill To: Globex LLC
+Description Qty Unit Price Amount
+Hex Bolt M8 2 14.79 29.58
+Toner Cartridge 8 439.00 3,512.00
+Subtotal: 3,541.58
+Tax (10%): 354.16
+Total: GBP 3,895.74

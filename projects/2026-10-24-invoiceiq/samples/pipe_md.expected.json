@@ -1,0 +1,35 @@
+{
+  "invoice_number": "R-2024-3705",
+  "invoice_date": "2024-06-22",
+  "vendor": "Orchard & Vine Ltd",
+  "currency": "GBP",
+  "line_items": [
+    {
+      "description": "Label Roll 500",
+      "quantity": "3",
+      "unit_price": "381.43",
+      "amount": "1144.29"
+    },
+    {
+      "description": "LED Panel 60W",
+      "quantity": "7",
+      "unit_price": "374.63",
+      "amount": "2622.41"
+    },
+    {
+      "description": "Paper Ream A4",
+      "quantity": "2",
+      "unit_price": "343.87",
+      "amount": "687.74"
+    },
+    {
+      "description": "USB-C Hub",
+      "quantity": "3",
+      "unit_price": "590.86",
+      "amount": "1772.58"
+    }
+  ],
+  "subtotal": "6227.02",
+  "tax": "622.70",
+  "total": "6849.72"
+}

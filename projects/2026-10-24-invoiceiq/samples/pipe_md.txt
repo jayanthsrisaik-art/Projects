@@ -1,0 +1,12 @@
+# Orchard & Vine Ltd
+Invoice number: R-2024-3705
+Issued: Jun 22, 2024
+Due Date: Jul 22, 2024
+| Description | Qty | Unit | Amount |
+| Label Roll 500 | 3 | £381.43 | £1,144.29 |
+| LED Panel 60W | 7 | £374.63 | £2,622.41 |
+| Paper Ream A4 | 2 | £343.87 | £687.74 |
+| USB-C Hub | 3 | £590.86 | £1,772.58 |
+Sub-total £6,227.02
+Sales tax £622.70
+Grand Total £6,849.72

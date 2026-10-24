@@ -1,0 +1,23 @@
+{
+  "invoice_number": "BL-2024-8981",
+  "invoice_date": "2024-10-25",
+  "vendor": "Blue Harbor Supply",
+  "currency": "EUR",
+  "line_items": [
+    {
+      "description": "Toner Cartridge",
+      "quantity": "1",
+      "unit_price": "412.64",
+      "amount": "412.64"
+    },
+    {
+      "description": "Cat6 Cable 2m",
+      "quantity": "1",
+      "unit_price": "834.67",
+      "amount": "834.67"
+    }
+  ],
+  "subtotal": "1247.31",
+  "tax": "99.78",
+  "total": "1347.09"
+}

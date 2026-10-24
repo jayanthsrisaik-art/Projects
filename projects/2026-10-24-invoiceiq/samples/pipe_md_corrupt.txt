@@ -1,0 +1,10 @@
+# Tandem Logistics
+Invoice number: BL-2024-6200
+Issued: Jun 5, 2024
+Due Date: Jul 5, 2024
+| Description | Qty | Unit | Amount |
+| Widget A | 8 | $621.53 | $4,972.24 |
+| Pallet Wrap | 3 | $851.11 | $2,553.33 |
+Sub-total $7,525.57
+Sales tax $1,505.11
+Grand Total $9,03O.68

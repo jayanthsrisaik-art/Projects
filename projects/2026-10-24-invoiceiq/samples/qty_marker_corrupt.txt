@@ -1,0 +1,8 @@
+Blue Harbor Supply
+Invoice: INV-2024-1613
+Date: 23 Jul 2024
+Item  Qty  Amount
+Paper Ream A4 x4 546.12
+Subtotal 546.12
+Tax 43.O9
+TOTAL DUE USD 589.81

@@ -1,0 +1,17 @@
+{
+  "invoice_number": "INV-2024-1613",
+  "invoice_date": "2024-07-23",
+  "vendor": "Blue Harbor Supply",
+  "currency": "USD",
+  "line_items": [
+    {
+      "description": "Paper Ream A4",
+      "quantity": "4",
+      "unit_price": "136.53",
+      "amount": "546.12"
+    }
+  ],
+  "subtotal": "546.12",
+  "tax": "43.69",
+  "total": "589.81"
+}

@@ -1,0 +1,23 @@
+{
+  "invoice_number": "INV-2024-8779",
+  "invoice_date": "2024-07-24",
+  "vendor": "Quartz Office Goods",
+  "currency": "EUR",
+  "line_items": [
+    {
+      "description": "Widget A",
+      "quantity": "8",
+      "unit_price": "188.08",
+      "amount": "1504.64"
+    },
+    {
+      "description": "Hex Bolt M8",
+      "quantity": "8",
+      "unit_price": "937.04",
+      "amount": "7496.32"
+    }
+  ],
+  "subtotal": "9000.96",
+  "tax": "900.10",
+  "total": "9901.06"
+}

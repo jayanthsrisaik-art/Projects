@@ -1,0 +1,23 @@
+{
+  "invoice_number": "BL-2024-6200",
+  "invoice_date": "2024-06-05",
+  "vendor": "Tandem Logistics",
+  "currency": "USD",
+  "line_items": [
+    {
+      "description": "Widget A",
+      "quantity": "8",
+      "unit_price": "621.53",
+      "amount": "4972.24"
+    },
+    {
+      "description": "Pallet Wrap",
+      "quantity": "3",
+      "unit_price": "851.11",
+      "amount": "2553.33"
+    }
+  ],
+  "subtotal": "7525.57",
+  "tax": "1505.11",
+  "total": "9030.68"
+}

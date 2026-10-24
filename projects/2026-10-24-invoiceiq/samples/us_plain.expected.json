@@ -1,0 +1,23 @@
+{
+  "invoice_number": "R-2024-7993",
+  "invoice_date": "2024-01-31",
+  "vendor": "Northwind Traders",
+  "currency": "GBP",
+  "line_items": [
+    {
+      "description": "Hex Bolt M8",
+      "quantity": "2",
+      "unit_price": "14.79",
+      "amount": "29.58"
+    },
+    {
+      "description": "Toner Cartridge",
+      "quantity": "8",
+      "unit_price": "439.00",
+      "amount": "3512.00"
+    }
+  ],
+  "subtotal": "3541.58",
+  "tax": "354.16",
+  "total": "3895.74"
+}

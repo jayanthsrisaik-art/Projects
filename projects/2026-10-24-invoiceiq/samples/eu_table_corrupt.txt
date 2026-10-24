@@ -1,0 +1,9 @@
+Blue Harbor Supply
+Invoice No: BL-2024-8981
+Invoice Date: 25.10.2024
+Item Qty x Price = Amount
+Toner Cartridge 1 x 412,64 = 412,64
+Cat6 Cable 2m 1 x 834,67 = 834,67
+Net total 1.247,34 EUR
+VAT 8% 99,78 EUR
+Amount due: 1.347,09 EUR

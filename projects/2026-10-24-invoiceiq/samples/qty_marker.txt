@@ -1,0 +1,8 @@
+Pioneer Cable Works
+Invoice: INV-2024-3944
+Date: 13 May 2024
+Item  Qty  Amount
+Safety Gloves x3 2,105.46
+Subtotal 2,105.46
+Tax 210.55
+TOTAL DUE EUR 2,316.01

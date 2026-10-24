@@ -1,0 +1,17 @@
+{
+  "invoice_number": "INV-2024-3944",
+  "invoice_date": "2024-05-13",
+  "vendor": "Pioneer Cable Works",
+  "currency": "EUR",
+  "line_items": [
+    {
+      "description": "Safety Gloves",
+      "quantity": "3",
+      "unit_price": "701.82",
+      "amount": "2105.46"
+    }
+  ],
+  "subtotal": "2105.46",
+  "tax": "210.55",
+  "total": "2316.01"
+}

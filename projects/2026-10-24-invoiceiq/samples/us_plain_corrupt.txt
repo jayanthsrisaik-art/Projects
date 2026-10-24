@@ -1,0 +1,9 @@
+Blue Harbor Supply
+INVOICE #INV-2024-6605
+Date: 2024-06-18
+Bill To: Umbrella Foods
+Description Qty Unit Price Amount
+USB-C Hub 4 61.00 244.00
+Subtotal: 244.00
+Tax (10%): 26.40
+Total: USD 268.40

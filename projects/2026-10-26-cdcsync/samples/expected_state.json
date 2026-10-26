@@ -1,0 +1,24 @@
+{
+  "customers": [
+    {
+      "email": "ada@new.test",
+      "id": 1,
+      "loyalty_tier": null,
+      "name": "Ada"
+    },
+    {
+      "email": "grace@example.test",
+      "id": 2,
+      "loyalty_tier": "gold",
+      "name": "Grace"
+    }
+  ],
+  "orders": [
+    {
+      "amount_cents": 4200,
+      "customer_id": 2,
+      "id": 12,
+      "status": "placed"
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+source,source_id,first_name,last_name,email,phone,dob,street,city,zip,updated_at
+crm,CRM-000005,Olivia,Miller,oliviamiller38@mail.com,,,9901 Elm Rd,Fairview,97024,2026-02-01
+support,SUP-000011,Maria,Jones,maria_jones46@yahoo.com,(887) 473-2169,1964-08-04,4751 Maple Avenue,Springfield,62701,2026-02-03
+billing,BIL-000004,Nicholas,Okafor,nick.okafor@stale.example,,20000512,3493 Sunset Road,Franklin,37064,2023-01-01
+crm,CRM-000012,Grace,Rossi,grace.rossi5@outlook.com,555-410-2290,1991-04-17,77 Lincoln Drive,Madison,53703,2026-02-05

@@ -1,0 +1,1 @@
+error: dataset 'products' is not reachable from 'orders' through many-to-one joins; joining it would repeat 'orders' rows and inflate its measures (fan-out)

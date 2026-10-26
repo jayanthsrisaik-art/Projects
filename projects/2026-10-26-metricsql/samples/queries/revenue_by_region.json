@@ -1,0 +1,1 @@
+{"metrics": ["revenue", "orders", "aov", "refund_rate"], "group_by": ["customers__region"], "order_by": ["-revenue"]}

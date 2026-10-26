@@ -1,0 +1,90 @@
+{
+  "datasets": {
+    "customers": {
+      "table": "customers",
+      "primary_key": "customer_id",
+      "time_dimension": "customers__signup_date",
+      "dimensions": {
+        "region": {"column": "region"},
+        "segment": {"column": "segment"},
+        "signup_date": {"column": "signup_date", "type": "time"}
+      },
+      "measures": {
+        "customer_count": {"agg": "count", "column": "customer_id"}
+      }
+    },
+    "products": {
+      "table": "products",
+      "primary_key": "product_id",
+      "dimensions": {
+        "category": {"column": "category"}
+      }
+    },
+    "orders": {
+      "table": "orders",
+      "primary_key": "order_id",
+      "time_dimension": "orders__order_date",
+      "joins": [{"to": "customers", "foreign_key": "customer_id"}],
+      "dimensions": {
+        "status": {"column": "status"},
+        "channel": {"column": "channel"},
+        "order_date": {"column": "order_date", "type": "time"},
+        "has_shipping_fee": {"sql": "CASE WHEN ${TABLE}.shipping_fee > 0 THEN 'yes' ELSE 'no' END"}
+      },
+      "measures": {
+        "order_count": {"agg": "count", "column": "order_id"},
+        "buyers": {"agg": "count_distinct", "column": "customer_id"},
+        "shipping": {"agg": "sum", "column": "shipping_fee"}
+      }
+    },
+    "order_items": {
+      "table": "order_items",
+      "primary_key": "item_id",
+      "time_dimension": "orders__order_date",
+      "joins": [
+        {"to": "orders", "foreign_key": "order_id"},
+        {"to": "products", "foreign_key": "product_id"}
+      ],
+      "measures": {
+        "gross_revenue": {"agg": "sum", "sql": "${TABLE}.quantity * ${TABLE}.unit_price"},
+        "units": {"agg": "sum", "column": "quantity"},
+        "avg_unit_price": {"agg": "avg", "column": "unit_price"}
+      }
+    },
+    "refunds": {
+      "table": "refunds",
+      "primary_key": "refund_id",
+      "time_dimension": "refunds__refund_date",
+      "joins": [{"to": "orders", "foreign_key": "order_id"}],
+      "dimensions": {
+        "refund_date": {"column": "refund_date", "type": "time"}
+      },
+      "measures": {
+        "refund_amount": {"agg": "sum", "column": "amount"},
+        "refund_count": {"agg": "count", "column": "refund_id"}
+      }
+    }
+  },
+  "metrics": {
+    "revenue": {"type": "simple", "measure": "order_items.gross_revenue",
+                "description": "Item revenue (quantity x unit price), all order statuses"},
+    "completed_revenue": {"type": "simple", "measure": "order_items.gross_revenue",
+                          "filter": [{"dimension": "orders__status", "op": "=", "value": "completed"}],
+                          "description": "Item revenue of completed orders only"},
+    "units": {"type": "simple", "measure": "order_items.units"},
+    "avg_unit_price": {"type": "simple", "measure": "order_items.avg_unit_price"},
+    "orders": {"type": "simple", "measure": "orders.order_count"},
+    "buyers": {"type": "simple", "measure": "orders.buyers", "description": "Distinct ordering customers"},
+    "shipping_revenue": {"type": "simple", "measure": "orders.shipping"},
+    "refunds": {"type": "simple", "measure": "refunds.refund_amount",
+                "description": "Refunded amount, dated by refund_date"},
+    "refund_count": {"type": "simple", "measure": "refunds.refund_count"},
+    "new_customers": {"type": "simple", "measure": "customers.customer_count",
+                      "description": "Customers by signup date"},
+    "aov": {"type": "ratio", "numerator": "revenue", "denominator": "orders",
+            "description": "Average order value"},
+    "refund_rate": {"type": "ratio", "numerator": "refunds", "denominator": "revenue"},
+    "net_revenue": {"type": "derived", "expr": "revenue + shipping_revenue - refunds"},
+    "units_per_order": {"type": "derived", "expr": "units / orders"}
+  }
+}

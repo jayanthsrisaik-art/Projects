@@ -1,0 +1,9 @@
+{
+  "applied": 7,
+  "duplicates": 1,
+  "lines_read": 15,
+  "pending_tx": 1,
+  "rejected": 1,
+  "stale_skipped": 1,
+  "tx_committed": 4
+}

@@ -1,0 +1,15 @@
+{"type": "tx_end", "tx": "t1", "event_count": 2}
+{"type": "change", "table": "customers", "op": "u", "key": {"id": 1}, "after": {"id": 1, "name": "Ada", "email": "ada@new.test"}, "lsn": 110, "tx": "t1"}
+{"type": "change", "table": "customers", "op": "r", "key": {"id": 1}, "after": {"id": 1, "name": "Ada", "email": "ada@old.test"}, "lsn": 101, "tx": null}
+{"type": "change", "table": "customers", "op": "r", "key": {"id": 2}, "after": {"id": 2, "name": "Grace", "email": "grace@example.test"}, "lsn": 102, "tx": null}
+{"type": "change", "table": "orders", "op": "c", "key": {"id": 10}, "after": {"id": 10, "customer_id": 1, "amount_cents": 2500, "status": "placed"}, "lsn": 111, "tx": "t1"}
+{"type": "change", "table": "orders", "op": "c", "key": {"id": 10}, "after": {"id": 10, "customer_id": 1, "amount_cents": 2500, "status": "placed"}, "lsn": 111, "tx": "t1"}
+{"type": "change", "table": "orders", "op": "d", "key": {"id": 10}, "after": null, "lsn": 130, "tx": "t3"}
+{"type": "tx_end", "tx": "t3", "event_count": 1}
+{"type": "change", "table": "orders", "op": "u", "key": {"id": 10}, "after": {"id": 10, "customer_id": 1, "amount_cents": 2500, "status": "paid"}, "lsn": 120, "tx": "t2"}
+{"type": "tx_end", "tx": "t2", "event_count": 1}
+{"type": "change", "table": "customers", "op": "u", "key": {"id": 2}, "after": {"id": 2, "name": "Grace", "email": "grace@example.test", "loyalty_tier": "gold"}, "lsn": 140, "tx": "t4"}
+{"type": "tx_end", "tx": "t4", "event_count": 1}
+{"type": "change", "table": "orders", "op": "c", "key": {"id": 11}
+{"type": "change", "table": "orders", "op": "c", "key": {"id": 11}, "after": {"id": 11, "customer_id": 2, "amount_cents": 900, "status": "placed"}, "lsn": 150, "tx": "t5"}
+{"type": "change", "table": "orders", "op": "c", "key": {"id": 12}, "after": {"id": 12, "customer_id": 2, "amount_cents": 4200, "status": "placed"}, "lsn": 160, "tx": null}

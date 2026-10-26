@@ -1,0 +1,14 @@
+golden_id,first_name,last_name,email,phone,dob,street,city,zip,member_count
+G000001,Nicholas,Okafor,nicholasokafor34@mail.com,6397977543,2000-05-12,3493 Sunset Rd.,Franklin,37064,4
+G000002,Thomas,Kim,thomas.kim70@mail.com,8145319005,1983-07-19,1837 Elm Rd,Fairview,97024,4
+G000003,Patricia,Chen,patricia.chen28@outlook.com,3052947224,1974-12-06,6883 Cedar Ln.,Riverton,82501,3
+G000004,Omar,Clark,omar_clark77@example.org,3133563621,1984-07-09,8358 Hill Avenue Apt 4,Riverton,82501,3
+G000005,Michael,Clak,michael.clark88@gmail.com,3133563621,1999-08-20,8358 Hill Avenue #4,Riverton,82501,3
+G000006,Hiro,Kim,hirokim65@mail.com,6652035315,1976-10-10,1837 Elm Rd,Fairview,97024,3
+G000007,Olivia,Miller,oliviamiller38@mail.com,5717914150,1957-01-26,9901 Elm Rd,Fairview,97024,2
+G000008,Jennifer,Johnson,jennifer_johnson68@mail.com,2812878962,,"5048 Cedar Road, Apartment 37",Springfield,62701,2
+G000009,Maria,Jones,maria_jones46@yahoo.com,8874732169,,4751 Maple Ave.,Springfield,62701,1
+G000010,Priya,Davis,priya.davis12@yahoo.com,4397171434,,"4022 Cedar Rd., Apartment 7",Springfield,62701,1
+G000011,Olivia,Miller,,,,9901 Elm Rd,Fairview,97024,1
+G000012,James,Schneider,james.schneider41@example.org,4752674456,,8761 River Avenue #30,Franklin,37064,1
+G000013,Carlos,Johnson,,6098877118,1969-01-01,5048 Cedar Rd. #37,Springfield,62701,1

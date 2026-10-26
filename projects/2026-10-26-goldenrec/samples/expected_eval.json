@@ -1,0 +1,30 @@
+{
+  "records": 29,
+  "goldenrec": {
+    "precision": 1.0,
+    "recall": 0.9286,
+    "f1": 0.963,
+    "true_pairs": 28,
+    "predicted_pairs": 26,
+    "true_positive_pairs": 26,
+    "clusters": 13,
+    "true_entities": 12
+  },
+  "baseline_exact_email_or_phone": {
+    "precision": 0.625,
+    "recall": 0.5357,
+    "f1": 0.5769,
+    "true_pairs": 28,
+    "predicted_pairs": 24,
+    "true_positive_pairs": 15,
+    "clusters": 17,
+    "true_entities": 12
+  },
+  "blocking": {
+    "candidate_pairs": 51,
+    "pair_completeness": 1.0,
+    "reduction_ratio": 0.874384
+  },
+  "blocked_merges": 0,
+  "review_pairs": 4
+}

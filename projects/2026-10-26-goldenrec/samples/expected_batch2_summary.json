@@ -1,0 +1,16 @@
+{
+  "run_id": 2,
+  "input_rows": 4,
+  "records": 31,
+  "clusters": 13,
+  "candidate_pairs": 52,
+  "matches": 29,
+  "review_pairs": 2,
+  "blocked_merges": 0,
+  "oversized_blocks": 0,
+  "events": {
+    "created": 1,
+    "merged": 1,
+    "updated": 2
+  }
+}

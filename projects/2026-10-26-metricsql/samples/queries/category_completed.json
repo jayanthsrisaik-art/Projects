@@ -1,0 +1,7 @@
+{
+  "metrics": ["completed_revenue", "units", "avg_unit_price"],
+  "group_by": ["products__category"],
+  "where": [{"dimension": "customers__region", "op": "in", "value": ["north", "south"]}],
+  "order_by": ["-completed_revenue"],
+  "limit": 3
+}

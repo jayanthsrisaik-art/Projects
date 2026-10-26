@@ -1,0 +1,1 @@
+{"metrics": ["orders"], "group_by": ["products__category"]}

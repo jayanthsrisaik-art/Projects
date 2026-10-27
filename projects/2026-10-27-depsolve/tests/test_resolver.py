@@ -89,6 +89,16 @@ def test_backjumping_explores_far_fewer_candidates():
     assert cbj.stats.steps * 50 < chrono.stats.steps
 
 
+def test_resolve_twice_gives_identical_result():
+    reg, _ = backjump_problem(2)
+    r = Resolver(reg, deps({"q": "*", "w": "^1"}))  # unsatisfiable: every q needs w ^2
+    first = r.resolve()
+    snapshot = (first.ok, dict(first.solution), vars(first.stats).copy(), dict(first.empty_domains))
+    assert not first.ok and first.stats.steps > 0 and first.empty_domains
+    second = r.resolve()
+    assert (second.ok, second.solution, vars(second.stats), dict(second.empty_domains)) == snapshot
+
+
 def test_step_budget():
     reg, root = backjump_problem(6)
     with pytest.raises(ResolutionError):

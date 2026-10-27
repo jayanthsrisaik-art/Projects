@@ -193,6 +193,8 @@ class Resolver:
     def resolve(self) -> Resolution:
         self.reqs = {name: [(ROOT, r)] for name, r in self.root_deps.items()}
         self.assign = {}
+        self.stats = Stats()
+        self.empty_domains = Counter()
         limit = sys.getrecursionlimit()
         sys.setrecursionlimit(max(limit, 4 * len(self.registry.names()) + 1000))
         try:

@@ -90,7 +90,7 @@ step budget exceeded.
 cd projects/2026-10-27-depsolve
 python -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt      # only pytest; the tool itself is stdlib
-python -m pytest -q                  # 339 tests
+python -m pytest -q                  # 342 tests
 python bench.py                      # ~3 s; output in samples/expected/bench.md
 ```
 

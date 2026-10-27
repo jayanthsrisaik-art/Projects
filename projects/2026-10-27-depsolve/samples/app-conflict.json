@@ -1,0 +1,8 @@
+{
+  "name": "shop-api",
+  "dependencies": {
+    "web": "^2.3.0",
+    "orm": "^3.0.0",
+    "log": "^1.0.0"
+  }
+}

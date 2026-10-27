@@ -1,0 +1,18 @@
+[project]
+name = "depsolve"
+version = "0.1.0"
+description = "Semantic-versioning dependency resolver with backjumping, lockfiles and conflict explanations"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.optional-dependencies]
+test = ["pytest>=8.0,<9"]
+
+[project.scripts]
+depsolve = "depsolve.cli:main"
+
+[tool.setuptools]
+packages = ["depsolve"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

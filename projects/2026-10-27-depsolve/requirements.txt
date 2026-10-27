@@ -1,0 +1,3 @@
+# Runtime: Python 3.10+ standard library only.
+# Tests:
+pytest>=8.0,<9

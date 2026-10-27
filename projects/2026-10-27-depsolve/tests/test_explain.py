@@ -46,3 +46,16 @@ def test_render_mentions_core_and_reasons():
     text = run(reg, deps({"a": "^2"})).render()
     assert text.startswith("Resolution failed.")
     assert "  - a ^2" in text and "Because:" in text
+
+
+def test_clash_with_already_chosen_version_is_explained():
+    # Search order is orm -> tls (pinned to 1.0.0 by orm) -> web, so web's clash
+    # is with an already-chosen version, not an empty domain; it must still be explained.
+    reg = make_registry({
+        "web": {"1.0.0": {"tls": "^2"}}, "orm": {"1.0.0": {"tls": "^1"}},
+        "tls": {"1.0.0": {}, "2.0.0": {}},
+    })
+    ex = run(reg, deps({"web": "*", "orm": "*"}))
+    assert ex.reasons == [
+        "orm@1.0.0 requires tls ^1, but web@1.0.0 requires tls ^2; no version of tls satisfies both"
+    ]

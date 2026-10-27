@@ -144,6 +144,8 @@ class Resolver:
                     return frozenset()
             elif q in self.assign:
                 if not r.satisfies(self.assign[q]):
+                    # q's chosen version has to give way: record q as out of options.
+                    self._record_empty(q, extra=(pkg, v, r))
                     return frozenset({q})
             elif not self._candidates(q, extra=r):
                 self._record_empty(q, extra=(pkg, v, r))

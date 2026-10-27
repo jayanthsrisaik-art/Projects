@@ -36,8 +36,12 @@ class Explanation:
         return "\n".join(lines)
 
 
-def _split(label: str) -> tuple[str, str]:
-    name, _, version = label.partition("@")
+def _split(label: str, root_name: str) -> tuple[str, str]:
+    # Split at the last "@" so scoped names like "@acme/web@1.0.0" stay whole;
+    # the root label carries no version and may itself be scoped.
+    if label == root_name:
+        return label, ""
+    name, _, version = label.rpartition("@")
     return name, version
 
 
@@ -53,7 +57,8 @@ def _describe(resolver: Resolver, event: EmptyDomain) -> tuple:
             return ("none", pkg, o, raw, ", ".join(str(v) for v in allowed) or "none")
     for (o1, raw1, r1), (o2, raw2, r2) in combinations(parsed, 2):
         if not [v for v in allowed if r1.satisfies(v) and r2.satisfies(v)]:
-            (n1, v1), (n2, v2) = sorted([(_split(o1), raw1), (_split(o2), raw2)])
+            root = resolver.root_name
+            (n1, v1), (n2, v2) = sorted([(_split(o1, root), raw1), (_split(o2, root), raw2)])
             return ("pair", pkg, n1[0], n2[0], (n1[1], v1), (n2[1], v2))
     return ("all", pkg, tuple(f"{o} requires {raw}" for o, raw, _ in parsed))
 

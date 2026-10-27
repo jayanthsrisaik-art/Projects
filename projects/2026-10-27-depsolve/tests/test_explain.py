@@ -59,3 +59,22 @@ def test_clash_with_already_chosen_version_is_explained():
     assert ex.reasons == [
         "orm@1.0.0 requires tls ^1, but web@1.0.0 requires tls ^2; no version of tls satisfies both"
     ]
+
+
+def test_scoped_package_names_group_correctly():
+    spec = {
+        "@acme/web": {"1.0.0": {"@acme/tls": "^2"}, "1.1.0": {"@acme/tls": "^2"}},
+        "@acme/orm": {"1.0.0": {"@acme/tls": "^1"}, "1.1.0": {"@acme/tls": "^1"}},
+        "@acme/tls": {"1.0.0": {}, "2.0.0": {}},
+    }
+    r = Resolver(make_registry(spec), deps({"@acme/web": "*", "@acme/orm": "*"}), root_name="@acme/app")
+    ex = explain(r, r.resolve())
+    assert ex.reasons == [
+        "@acme/orm@1.0.0/1.1.0 requires @acme/tls ^1, but @acme/web@1.0.0/1.1.0 requires @acme/tls ^2; "
+        "no version of @acme/tls satisfies both"
+    ]
+    # A scoped root name is a requirement origin without a version.
+    r = Resolver(make_registry({"@acme/web": {"1.0.0": {}}}), deps({"@acme/web": "^2"}), root_name="@acme/app")
+    assert explain(r, r.resolve()).reasons == [
+        "@acme/app requires @acme/web ^2, but no installable version matches (available: 1.0.0)"
+    ]

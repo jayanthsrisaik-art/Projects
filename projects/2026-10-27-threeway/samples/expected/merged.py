@@ -1,0 +1,21 @@
+import json
+import sys
+
+
+def load(path):
+    with open(path, encoding="utf-8") as fh:
+        return json.load(fh)
+
+
+def total(items):
+    """Sum price * qty over the cart."""
+    result = 0
+    for item in items:
+        result += item["price"] * item.get("qty", 1)
+    return result
+
+
+def main(argv=None):
+    argv = argv or sys.argv[1:]
+    data = load(argv[0] if argv else "cart.json")
+    print(total(data))

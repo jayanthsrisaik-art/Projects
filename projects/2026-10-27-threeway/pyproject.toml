@@ -1,0 +1,18 @@
+[project]
+name = "threeway"
+version = "0.1.0"
+description = "Myers diff, unified patches and diff3 three-way merge with git-compatible conflict styles"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.optional-dependencies]
+test = ["pytest>=8.0,<9"]
+
+[project.scripts]
+threeway = "threeway.cli:main"
+
+[tool.setuptools]
+packages = ["threeway"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

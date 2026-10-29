@@ -1,0 +1,37 @@
+{
+  "feature_views": [
+    {
+      "name": "customer_daily",
+      "entity": "customer_id",
+      "source": "customer_daily.csv",
+      "timestamp_field": "event_timestamp",
+      "created_timestamp_field": "created_timestamp",
+      "ttl_seconds": 259200,
+      "features": [
+        {"name": "txn_count_7d", "dtype": "int"},
+        {"name": "spend_7d", "dtype": "float"}
+      ]
+    },
+    {
+      "name": "merchant_risk",
+      "entity": "merchant_id",
+      "source": "merchant_risk.csv",
+      "timestamp_field": "event_timestamp",
+      "created_timestamp_field": "created_timestamp",
+      "features": [
+        {"name": "risk_score", "dtype": "float"},
+        {"name": "risk_tier", "dtype": "str"}
+      ]
+    },
+    {
+      "name": "customer_profile",
+      "entity": "customer_id",
+      "source": "customer_profile.csv",
+      "timestamp_field": "event_timestamp",
+      "features": [
+        {"name": "segment", "dtype": "str"},
+        {"name": "is_verified", "dtype": "bool"}
+      ]
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+customer_id,event_timestamp,segment,is_verified
+C1,2026-01-01T00:00:00Z,retail,true
+C1,2026-03-04T00:00:00Z,premium,true
+C2,2026-02-01T00:00:00Z,smb,false

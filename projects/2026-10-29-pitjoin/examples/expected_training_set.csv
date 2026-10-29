@@ -1,0 +1,10 @@
+txn_id,customer_id,merchant_id,event_timestamp,label,customer_daily__txn_count_7d,customer_daily__spend_7d,merchant_risk__risk_score,merchant_risk__risk_tier,customer_profile__segment,customer_profile__is_verified
+T1,C1,M1,2026-03-01T03:00:00Z,0,,,0.12,low,retail,true
+T2,C1,M1,2026-03-01T12:00:00Z,0,3,120.0,0.12,low,retail,true
+T3,C1,M2,2026-03-02T12:00:00Z,1,5,200.0,0.3,medium,retail,true
+T4,C1,M1,2026-03-04T12:00:00Z,0,4,150.5,0.55,high,premium,true
+T5,C1,M2,2026-03-05T12:00:00Z,0,6,210.0,0.3,medium,premium,true
+T6,C1,M2,2026-03-07T00:00:00Z,1,,,0.3,medium,premium,true
+T7,C2,M1,2026-03-01T12:00:00Z,0,,,0.12,low,smb,false
+T8,C3,M1,2026-03-03T00:00:00Z,0,,,0.12,low,,
+T9,C2,M1,2026-03-04T08:00:00Z,1,2,30.0,0.12,low,smb,false

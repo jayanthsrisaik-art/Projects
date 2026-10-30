@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>bookgrid</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <header>
+    <h1>bookgrid</h1>
+    <label>Room <select id="room"></select></label>
+    <span id="room-meta" class="muted"></span>
+    <div class="week-nav">
+      <button id="prev" type="button" aria-label="Previous week">&larr;</button>
+      <input id="week" type="date" aria-label="Week containing">
+      <button id="next" type="button" aria-label="Next week">&rarr;</button>
+    </div>
+  </header>
+  <main>
+    <section class="calendar" aria-label="Week view">
+      <div id="grid" class="grid"></div>
+    </section>
+    <aside>
+      <form id="booking-form">
+        <h2>New booking</h2>
+        <label>Title <input name="title" required maxlength="120"></label>
+        <label>Organizer <input name="organizer" required maxlength="80"></label>
+        <div class="row">
+          <label>Date <input name="date" type="date" required></label>
+          <label>Start <input name="start_time" type="time" step="300" required></label>
+          <label>Minutes <input name="duration" type="number" min="5" max="720" step="5" value="30" required></label>
+        </div>
+        <label>Repeat
+          <select name="freq">
+            <option value="none">Does not repeat</option>
+            <option value="DAILY">Daily</option>
+            <option value="WEEKLY">Weekly</option>
+          </select>
+        </label>
+        <fieldset id="repeat-options" hidden>
+          <label class="inline">Every <input name="interval" type="number" min="1" max="52" value="1"> <span id="interval-unit">weeks</span></label>
+          <div id="days" class="days"></div>
+          <label class="inline"><input type="radio" name="end_kind" value="count" checked> After <input name="count" type="number" min="1" max="366" value="4"> times</label>
+          <label class="inline"><input type="radio" name="end_kind" value="until"> Until <input name="until" type="date"></label>
+          <p id="rule-text" class="muted"></p>
+        </fieldset>
+        <label>If some dates clash
+          <select name="on_conflict">
+            <option value="reject">book nothing</option>
+            <option value="skip">skip those dates</option>
+          </select>
+        </label>
+        <div class="buttons">
+          <button type="button" id="check">Check</button>
+          <button type="submit">Book</button>
+        </div>
+        <div id="form-result" role="status"></div>
+      </form>
+      <section id="free" aria-label="Free slots">
+        <h2>Free for <span id="free-label"></span></h2>
+        <div id="free-slots" class="slots"></div>
+      </section>
+      <section id="details" hidden>
+        <h2 id="d-title"></h2>
+        <p id="d-meta" class="muted"></p>
+        <div class="row">
+          <label>Move to <input id="d-date" type="date"></label>
+          <label><input id="d-time" type="time" step="300"></label>
+          <button type="button" id="d-move">Move</button>
+        </div>
+        <div class="buttons">
+          <button type="button" data-scope="this">Cancel this</button>
+          <button type="button" data-scope="following">This &amp; following</button>
+          <button type="button" data-scope="series">Whole series</button>
+        </div>
+        <div id="d-result" role="status"></div>
+      </section>
+    </aside>
+  </main>
+  <script type="module" src="/static/app.js"></script>
+</body>
+</html>

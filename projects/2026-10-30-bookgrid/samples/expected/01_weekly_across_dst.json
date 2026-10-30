@@ -1,0 +1,43 @@
+{
+  "status": 201,
+  "body": {
+    "series_id": 6,
+    "resource": "Hudson",
+    "rrule": "FREQ=WEEKLY;BYDAY=MO,TH;COUNT=4",
+    "booked": [
+      {
+        "id": 53,
+        "recurrence_date": "2026-10-26",
+        "local_start": "2026-10-26T16:30-04:00",
+        "local_end": "2026-10-26T17:15-04:00",
+        "start_utc": "2026-10-26T20:30:00+00:00",
+        "note": null
+      },
+      {
+        "id": 54,
+        "recurrence_date": "2026-10-29",
+        "local_start": "2026-10-29T16:30-04:00",
+        "local_end": "2026-10-29T17:15-04:00",
+        "start_utc": "2026-10-29T20:30:00+00:00",
+        "note": null
+      },
+      {
+        "id": 55,
+        "recurrence_date": "2026-11-02",
+        "local_start": "2026-11-02T16:30-05:00",
+        "local_end": "2026-11-02T17:15-05:00",
+        "start_utc": "2026-11-02T21:30:00+00:00",
+        "note": null
+      },
+      {
+        "id": 56,
+        "recurrence_date": "2026-11-05",
+        "local_start": "2026-11-05T16:30-05:00",
+        "local_end": "2026-11-05T17:15-05:00",
+        "start_utc": "2026-11-05T21:30:00+00:00",
+        "note": null
+      }
+    ],
+    "skipped": []
+  }
+}

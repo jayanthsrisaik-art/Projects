@@ -1,0 +1,22 @@
+{
+  "resources": [
+    {"name": "Thames", "timezone": "Europe/London", "open_time": "08:00", "close_time": "18:00",
+     "open_days": ["MO", "TU", "WE", "TH", "FR"], "buffer_minutes": 10},
+    {"name": "Hudson", "timezone": "America/New_York", "open_time": "07:00", "close_time": "19:00",
+     "open_days": ["MO", "TU", "WE", "TH", "FR"], "buffer_minutes": 0},
+    {"name": "Ganges", "timezone": "Asia/Kolkata", "open_time": "09:00", "close_time": "21:00",
+     "open_days": ["MO", "TU", "WE", "TH", "FR", "SA"], "buffer_minutes": 15}
+  ],
+  "bookings": [
+    {"resource": "Thames", "title": "Platform standup", "organizer": "ana", "date": "2026-10-19",
+     "start_time": "09:30", "duration_minutes": 15, "rrule": "FREQ=WEEKLY;BYDAY=MO,TU,WE,TH,FR;COUNT=30"},
+    {"resource": "Thames", "title": "Design review", "organizer": "ben", "date": "2026-11-04",
+     "start_time": "14:00", "duration_minutes": 60, "rrule": "FREQ=WEEKLY;INTERVAL=2;COUNT=4"},
+    {"resource": "Hudson", "title": "Transatlantic sync", "organizer": "chen", "date": "2026-10-19",
+     "start_time": "11:00", "duration_minutes": 45, "rrule": "FREQ=WEEKLY;BYDAY=MO,TH;UNTIL=20261130"},
+    {"resource": "Hudson", "title": "Quarterly planning", "organizer": "dee", "date": "2026-11-05",
+     "start_time": "13:00", "duration_minutes": 180},
+    {"resource": "Ganges", "title": "Hiring panel", "organizer": "eli", "date": "2026-11-02",
+     "start_time": "16:00", "duration_minutes": 90, "rrule": "FREQ=DAILY;INTERVAL=2;COUNT=5"}
+  ]
+}

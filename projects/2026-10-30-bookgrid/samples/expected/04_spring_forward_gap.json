@@ -1,0 +1,27 @@
+{
+  "status": 201,
+  "body": {
+    "series_id": 8,
+    "resource": "Night desk",
+    "rrule": "FREQ=DAILY;COUNT=2",
+    "booked": [
+      {
+        "id": 59,
+        "recurrence_date": "2027-03-13",
+        "local_start": "2027-03-13T02:30-05:00",
+        "local_end": "2027-03-13T03:00-05:00",
+        "start_utc": "2027-03-13T07:30:00+00:00",
+        "note": null
+      },
+      {
+        "id": 60,
+        "recurrence_date": "2027-03-14",
+        "local_start": "2027-03-14T03:30-04:00",
+        "local_end": "2027-03-14T04:00-04:00",
+        "start_utc": "2027-03-14T07:30:00+00:00",
+        "note": "02:30 does not exist on 2027-03-14; shifted to 03:30"
+      }
+    ],
+    "skipped": []
+  }
+}

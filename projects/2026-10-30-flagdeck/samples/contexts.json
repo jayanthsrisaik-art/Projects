@@ -1,0 +1,15 @@
+[
+  {"key": "qa-alice", "email": "alice@gmail.com", "country": "DE"},
+  {"key": "vip-carol", "email": "carol@acme.com", "country": "US"},
+  {"key": "dan", "email": "dan@acme.com", "country": "FR", "plan": "free", "app_version": 4.2, "org": "org-1"},
+  {"key": "erin", "email": "erin@gmail.com", "country": "GB", "plan": "enterprise", "app_version": 5.0, "org": "org-2"},
+  {"key": "frank", "email": "frank@yahoo.com", "country": "US", "plan": "enterprise", "app_version": 4.0, "org": "org-3"},
+  {"key": "gina", "email": "gina@outlook.com", "plan": "enterprise", "app_version": 4.2, "org": "org-3", "groups": ["beta", "mobile"]},
+  {"key": "hank", "email": "hank@eng.acme.com", "country": "IN", "plan": "pro", "app_version": 5.0, "org": "org-4", "device_id": "d-991"},
+  {"key": "ivy", "email": "ivy@example.org", "country": "BR", "plan": "free", "app_version": "4.0", "org": 77, "device_id": "d-123"},
+  {"key": "jules", "email": "jules@gmail.com", "country": "US", "plan": "pro", "app_version": true, "org": "org-5", "groups": ["mobile"]},
+  {"key": "kai", "email": "KAI@ENG.ACME.COM", "country": "CA", "plan": "free", "app_version": 4.1, "org": "org-6", "device_id": 42},
+  {"key": "lena", "email": "lena@gmail.com", "country": "JP", "plan": "pro", "app_version": 4.1, "org": "org-6", "device_id": 4.5},
+  {"key": "mira", "email": "mira@qa.acme.com", "country": "US", "plan": "enterprise", "app_version": 4.1, "org": "org-7", "device_id": 7.0},
+  {"key": "u-ünïcode-☃", "email": "snow@example.org", "country": "US", "plan": "free", "app_version": 4.2, "org": "org-ß"}
+]

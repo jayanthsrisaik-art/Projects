@@ -1,0 +1,887 @@
+{
+ "dev": {
+  "dan": {
+   "checkout-banner": {
+    "reason": {
+     "kind": "OFF"
+    },
+    "value": {
+     "color": "green",
+     "text": "Free shipping over $50"
+    },
+    "variation": 0
+   },
+   "new-checkout": {
+    "reason": {
+     "kind": "FALLTHROUGH"
+    },
+    "value": true,
+    "variation": 1
+   },
+   "one-click-reorder": {
+    "reason": {
+     "kind": "FALLTHROUGH"
+    },
+    "value": true,
+    "variation": 1
+   },
+   "search-ranker": {
+    "reason": {
+     "kind": "FALLTHROUGH"
+    },
+    "value": "hybrid",
+    "variation": 1
+   }
+  },
+  "erin": {
+   "checkout-banner": {
+    "reason": {
+     "kind": "OFF"
+    },
+    "value": {
+     "color": "green",
+     "text": "Free shipping over $50"
+    },
+    "variation": 0
+   },
+   "new-checkout": {
+    "reason": {
+     "kind": "FALLTHROUGH"
+    },
+    "value": true,
+    "variation": 1
+   },
+   "one-click-reorder": {
+    "reason": {
+     "kind": "FALLTHROUGH"
+    },
+    "value": true,
+    "variation": 1
+   },
+   "search-ranker": {
+    "reason": {
+     "kind": "FALLTHROUGH"
+    },
+    "value": "dense",
+    "variation": 2
+   }
+  },
+  "frank": {
+   "checkout-banner": {
+    "reason": {
+     "kind": "OFF"
+    },
+    "value": {
+     "color": "green",
+     "text": "Free shipping over $50"
+    },
+    "variation": 0
+   },
+   "new-checkout": {
+    "reason": {
+     "kind": "FALLTHROUGH"
+    },
+    "value": true,
+    "variation": 1
+   },
+   "one-click-reorder": {
+    "reason": {
+     "kind": "FALLTHROUGH"
+    },
+    "value": true,
+    "variation": 1
+   },
+   "search-ranker": {
+    "reason": {
+     "kind": "FALLTHROUGH"
+    },
+    "value": "bm25",
+    "variation": 0
+   }
+  },
+  "gina": {
+   "checkout-banner": {
+    "reason": {
+     "kind": "OFF"
+    },
+    "value": {
+     "color": "green",
+     "text": "Free shipping over $50"
+    },
+    "variation": 0
+   },
+   "new-checkout": {
+    "reason": {
+     "kind": "FALLTHROUGH"
+    },
+    "value": true,
+    "variation": 1
+   },
+   "one-click-reorder": {
+    "reason": {
+     "kind": "FALLTHROUGH"
+    },
+    "value": true,
+    "variation": 1
+   },
+   "search-ranker": {
+    "reason": {
+     "kind": "FALLTHROUGH"
+    },
+    "value": "bm25",
+    "variation": 0
+   }
+  },
+  "hank": {
+   "checkout-banner": {
+    "reason": {
+     "kind": "OFF"
+    },
+    "value": {
+     "color": "green",
+     "text": "Free shipping over $50"
+    },
+    "variation": 0
+   },
+   "new-checkout": {
+    "reason": {
+     "kind": "FALLTHROUGH"
+    },
+    "value": true,
+    "variation": 1
+   },
+   "one-click-reorder": {
+    "reason": {
+     "kind": "FALLTHROUGH"
+    },
+    "value": true,
+    "variation": 1
+   },
+   "search-ranker": {
+    "reason": {
+     "kind": "FALLTHROUGH"
+    },
+    "value": "hybrid",
+    "variation": 1
+   }
+  },
+  "ivy": {
+   "checkout-banner": {
+    "reason": {
+     "kind": "OFF"
+    },
+    "value": {
+     "color": "green",
+     "text": "Free shipping over $50"
+    },
+    "variation": 0
+   },
+   "new-checkout": {
+    "reason": {
+     "kind": "FALLTHROUGH"
+    },
+    "value": true,
+    "variation": 1
+   },
+   "one-click-reorder": {
+    "reason": {
+     "kind": "FALLTHROUGH"
+    },
+    "value": true,
+    "variation": 1
+   },
+   "search-ranker": {
+    "reason": {
+     "kind": "FALLTHROUGH"
+    },
+    "value": "dense",
+    "variation": 2
+   }
+  },
+  "jules": {
+   "checkout-banner": {
+    "reason": {
+     "kind": "OFF"
+    },
+    "value": {
+     "color": "green",
+     "text": "Free shipping over $50"
+    },
+    "variation": 0
+   },
+   "new-checkout": {
+    "reason": {
+     "kind": "FALLTHROUGH"
+    },
+    "value": true,
+    "variation": 1
+   },
+   "one-click-reorder": {
+    "reason": {
+     "kind": "FALLTHROUGH"
+    },
+    "value": true,
+    "variation": 1
+   },
+   "search-ranker": {
+    "reason": {
+     "kind": "FALLTHROUGH"
+    },
+    "value": "hybrid",
+    "variation": 1
+   }
+  },
+  "kai": {
+   "checkout-banner": {
+    "reason": {
+     "kind": "OFF"
+    },
+    "value": {
+     "color": "green",
+     "text": "Free shipping over $50"
+    },
+    "variation": 0
+   },
+   "new-checkout": {
+    "reason": {
+     "kind": "FALLTHROUGH"
+    },
+    "value": true,
+    "variation": 1
+   },
+   "one-click-reorder": {
+    "reason": {
+     "kind": "FALLTHROUGH"
+    },
+    "value": true,
+    "variation": 1
+   },
+   "search-ranker": {
+    "reason": {
+     "kind": "FALLTHROUGH"
+    },
+    "value": "bm25",
+    "variation": 0
+   }
+  },
+  "lena": {
+   "checkout-banner": {
+    "reason": {
+     "kind": "OFF"
+    },
+    "value": {
+     "color": "green",
+     "text": "Free shipping over $50"
+    },
+    "variation": 0
+   },
+   "new-checkout": {
+    "reason": {
+     "kind": "FALLTHROUGH"
+    },
+    "value": true,
+    "variation": 1
+   },
+   "one-click-reorder": {
+    "reason": {
+     "kind": "FALLTHROUGH"
+    },
+    "value": true,
+    "variation": 1
+   },
+   "search-ranker": {
+    "reason": {
+     "kind": "FALLTHROUGH"
+    },
+    "value": "bm25",
+    "variation": 0
+   }
+  },
+  "mira": {
+   "checkout-banner": {
+    "reason": {
+     "kind": "OFF"
+    },
+    "value": {
+     "color": "green",
+     "text": "Free shipping over $50"
+    },
+    "variation": 0
+   },
+   "new-checkout": {
+    "reason": {
+     "kind": "FALLTHROUGH"
+    },
+    "value": true,
+    "variation": 1
+   },
+   "one-click-reorder": {
+    "reason": {
+     "kind": "FALLTHROUGH"
+    },
+    "value": true,
+    "variation": 1
+   },
+   "search-ranker": {
+    "reason": {
+     "kind": "FALLTHROUGH"
+    },
+    "value": "bm25",
+    "variation": 0
+   }
+  },
+  "qa-alice": {
+   "checkout-banner": {
+    "reason": {
+     "kind": "OFF"
+    },
+    "value": {
+     "color": "green",
+     "text": "Free shipping over $50"
+    },
+    "variation": 0
+   },
+   "new-checkout": {
+    "reason": {
+     "kind": "FALLTHROUGH"
+    },
+    "value": true,
+    "variation": 1
+   },
+   "one-click-reorder": {
+    "reason": {
+     "kind": "FALLTHROUGH"
+    },
+    "value": true,
+    "variation": 1
+   },
+   "search-ranker": {
+    "reason": {
+     "kind": "FALLTHROUGH"
+    },
+    "value": "bm25",
+    "variation": 0
+   }
+  },
+  "u-ünïcode-☃": {
+   "checkout-banner": {
+    "reason": {
+     "kind": "OFF"
+    },
+    "value": {
+     "color": "green",
+     "text": "Free shipping over $50"
+    },
+    "variation": 0
+   },
+   "new-checkout": {
+    "reason": {
+     "kind": "FALLTHROUGH"
+    },
+    "value": true,
+    "variation": 1
+   },
+   "one-click-reorder": {
+    "reason": {
+     "kind": "FALLTHROUGH"
+    },
+    "value": true,
+    "variation": 1
+   },
+   "search-ranker": {
+    "reason": {
+     "kind": "FALLTHROUGH"
+    },
+    "value": "hybrid",
+    "variation": 1
+   }
+  },
+  "vip-carol": {
+   "checkout-banner": {
+    "reason": {
+     "kind": "OFF"
+    },
+    "value": {
+     "color": "green",
+     "text": "Free shipping over $50"
+    },
+    "variation": 0
+   },
+   "new-checkout": {
+    "reason": {
+     "kind": "FALLTHROUGH"
+    },
+    "value": true,
+    "variation": 1
+   },
+   "one-click-reorder": {
+    "reason": {
+     "kind": "FALLTHROUGH"
+    },
+    "value": true,
+    "variation": 1
+   },
+   "search-ranker": {
+    "reason": {
+     "kind": "FALLTHROUGH"
+    },
+    "value": "bm25",
+    "variation": 0
+   }
+  }
+ },
+ "prod": {
+  "dan": {
+   "checkout-banner": {
+    "reason": {
+     "kind": "FALLTHROUGH"
+    },
+    "value": {
+     "color": "green",
+     "text": "Free shipping over $50"
+    },
+    "variation": 0
+   },
+   "new-checkout": {
+    "reason": {
+     "kind": "RULE_MATCH",
+     "rule_id": "staff",
+     "rule_index": 0
+    },
+    "value": true,
+    "variation": 1
+   },
+   "one-click-reorder": {
+    "reason": {
+     "kind": "FALLTHROUGH"
+    },
+    "value": false,
+    "variation": 0
+   },
+   "search-ranker": {
+    "reason": {
+     "kind": "FALLTHROUGH"
+    },
+    "value": "bm25",
+    "variation": 0
+   }
+  },
+  "erin": {
+   "checkout-banner": {
+    "reason": {
+     "kind": "FALLTHROUGH"
+    },
+    "value": {
+     "color": "green",
+     "text": "Free shipping over $50"
+    },
+    "variation": 0
+   },
+   "new-checkout": {
+    "reason": {
+     "kind": "RULE_MATCH",
+     "rule_id": "eu-holdout",
+     "rule_index": 1
+    },
+    "value": false,
+    "variation": 0
+   },
+   "one-click-reorder": {
+    "reason": {
+     "kind": "PREREQUISITE_FAILED",
+     "prerequisite": "new-checkout"
+    },
+    "value": false,
+    "variation": 0
+   },
+   "search-ranker": {
+    "reason": {
+     "kind": "RULE_MATCH",
+     "rule_id": "enterprise-not-us",
+     "rule_index": 1
+    },
+    "value": "hybrid",
+    "variation": 1
+   }
+  },
+  "frank": {
+   "checkout-banner": {
+    "reason": {
+     "kind": "FALLTHROUGH"
+    },
+    "value": {
+     "color": "green",
+     "text": "Free shipping over $50"
+    },
+    "variation": 0
+   },
+   "new-checkout": {
+    "reason": {
+     "kind": "FALLTHROUGH"
+    },
+    "value": false,
+    "variation": 0
+   },
+   "one-click-reorder": {
+    "reason": {
+     "kind": "PREREQUISITE_FAILED",
+     "prerequisite": "new-checkout"
+    },
+    "value": false,
+    "variation": 0
+   },
+   "search-ranker": {
+    "reason": {
+     "kind": "RULE_MATCH",
+     "rule_id": "old-clients",
+     "rule_index": 0
+    },
+    "value": "bm25",
+    "variation": 0
+   }
+  },
+  "gina": {
+   "checkout-banner": {
+    "reason": {
+     "kind": "FALLTHROUGH"
+    },
+    "value": {
+     "color": "green",
+     "text": "Free shipping over $50"
+    },
+    "variation": 0
+   },
+   "new-checkout": {
+    "reason": {
+     "kind": "FALLTHROUGH"
+    },
+    "value": false,
+    "variation": 0
+   },
+   "one-click-reorder": {
+    "reason": {
+     "kind": "PREREQUISITE_FAILED",
+     "prerequisite": "new-checkout"
+    },
+    "value": false,
+    "variation": 0
+   },
+   "search-ranker": {
+    "reason": {
+     "kind": "FALLTHROUGH"
+    },
+    "value": "bm25",
+    "variation": 0
+   }
+  },
+  "hank": {
+   "checkout-banner": {
+    "reason": {
+     "kind": "RULE_MATCH",
+     "rule_id": "internal-hosts",
+     "rule_index": 0
+    },
+    "value": {
+     "color": "orange",
+     "text": "Order in the next hour for same-day dispatch"
+    },
+    "variation": 1
+   },
+   "new-checkout": {
+    "reason": {
+     "kind": "FALLTHROUGH"
+    },
+    "value": false,
+    "variation": 0
+   },
+   "one-click-reorder": {
+    "reason": {
+     "kind": "PREREQUISITE_FAILED",
+     "prerequisite": "new-checkout"
+    },
+    "value": false,
+    "variation": 0
+   },
+   "search-ranker": {
+    "reason": {
+     "kind": "FALLTHROUGH"
+    },
+    "value": "bm25",
+    "variation": 0
+   }
+  },
+  "ivy": {
+   "checkout-banner": {
+    "reason": {
+     "kind": "FALLTHROUGH"
+    },
+    "value": {
+     "color": "orange",
+     "text": "Order in the next hour for same-day dispatch"
+    },
+    "variation": 1
+   },
+   "new-checkout": {
+    "reason": {
+     "kind": "FALLTHROUGH"
+    },
+    "value": false,
+    "variation": 0
+   },
+   "one-click-reorder": {
+    "reason": {
+     "kind": "PREREQUISITE_FAILED",
+     "prerequisite": "new-checkout"
+    },
+    "value": false,
+    "variation": 0
+   },
+   "search-ranker": {
+    "reason": {
+     "kind": "FALLTHROUGH"
+    },
+    "value": "hybrid",
+    "variation": 1
+   }
+  },
+  "jules": {
+   "checkout-banner": {
+    "reason": {
+     "kind": "FALLTHROUGH"
+    },
+    "value": {
+     "color": "green",
+     "text": "Free shipping over $50"
+    },
+    "variation": 0
+   },
+   "new-checkout": {
+    "reason": {
+     "kind": "FALLTHROUGH"
+    },
+    "value": false,
+    "variation": 0
+   },
+   "one-click-reorder": {
+    "reason": {
+     "kind": "PREREQUISITE_FAILED",
+     "prerequisite": "new-checkout"
+    },
+    "value": false,
+    "variation": 0
+   },
+   "search-ranker": {
+    "reason": {
+     "kind": "FALLTHROUGH"
+    },
+    "value": "bm25",
+    "variation": 0
+   }
+  },
+  "kai": {
+   "checkout-banner": {
+    "reason": {
+     "kind": "FALLTHROUGH"
+    },
+    "value": {
+     "color": "green",
+     "text": "Free shipping over $50"
+    },
+    "variation": 0
+   },
+   "new-checkout": {
+    "reason": {
+     "kind": "FALLTHROUGH"
+    },
+    "value": false,
+    "variation": 0
+   },
+   "one-click-reorder": {
+    "reason": {
+     "kind": "PREREQUISITE_FAILED",
+     "prerequisite": "new-checkout"
+    },
+    "value": false,
+    "variation": 0
+   },
+   "search-ranker": {
+    "reason": {
+     "kind": "FALLTHROUGH"
+    },
+    "value": "bm25",
+    "variation": 0
+   }
+  },
+  "lena": {
+   "checkout-banner": {
+    "reason": {
+     "kind": "FALLTHROUGH"
+    },
+    "value": {
+     "color": "green",
+     "text": "Free shipping over $50"
+    },
+    "variation": 0
+   },
+   "new-checkout": {
+    "reason": {
+     "kind": "FALLTHROUGH"
+    },
+    "value": false,
+    "variation": 0
+   },
+   "one-click-reorder": {
+    "reason": {
+     "kind": "PREREQUISITE_FAILED",
+     "prerequisite": "new-checkout"
+    },
+    "value": false,
+    "variation": 0
+   },
+   "search-ranker": {
+    "reason": {
+     "kind": "FALLTHROUGH"
+    },
+    "value": "bm25",
+    "variation": 0
+   }
+  },
+  "mira": {
+   "checkout-banner": {
+    "reason": {
+     "kind": "RULE_MATCH",
+     "rule_id": "internal-hosts",
+     "rule_index": 0
+    },
+    "value": {
+     "color": "orange",
+     "text": "Order in the next hour for same-day dispatch"
+    },
+    "variation": 1
+   },
+   "new-checkout": {
+    "reason": {
+     "kind": "FALLTHROUGH"
+    },
+    "value": false,
+    "variation": 0
+   },
+   "one-click-reorder": {
+    "reason": {
+     "kind": "PREREQUISITE_FAILED",
+     "prerequisite": "new-checkout"
+    },
+    "value": false,
+    "variation": 0
+   },
+   "search-ranker": {
+    "reason": {
+     "kind": "FALLTHROUGH"
+    },
+    "value": "bm25",
+    "variation": 0
+   }
+  },
+  "qa-alice": {
+   "checkout-banner": {
+    "reason": {
+     "kind": "FALLTHROUGH"
+    },
+    "value": {
+     "color": "green",
+     "text": "Free shipping over $50"
+    },
+    "variation": 0
+   },
+   "new-checkout": {
+    "reason": {
+     "kind": "TARGET_MATCH"
+    },
+    "value": true,
+    "variation": 1
+   },
+   "one-click-reorder": {
+    "reason": {
+     "kind": "FALLTHROUGH"
+    },
+    "value": false,
+    "variation": 0
+   },
+   "search-ranker": {
+    "reason": {
+     "kind": "FALLTHROUGH"
+    },
+    "value": "bm25",
+    "variation": 0
+   }
+  },
+  "u-ünïcode-☃": {
+   "checkout-banner": {
+    "reason": {
+     "kind": "FALLTHROUGH"
+    },
+    "value": {
+     "color": "green",
+     "text": "Free shipping over $50"
+    },
+    "variation": 0
+   },
+   "new-checkout": {
+    "reason": {
+     "kind": "FALLTHROUGH"
+    },
+    "value": false,
+    "variation": 0
+   },
+   "one-click-reorder": {
+    "reason": {
+     "kind": "PREREQUISITE_FAILED",
+     "prerequisite": "new-checkout"
+    },
+    "value": false,
+    "variation": 0
+   },
+   "search-ranker": {
+    "reason": {
+     "kind": "FALLTHROUGH"
+    },
+    "value": "bm25",
+    "variation": 0
+   }
+  },
+  "vip-carol": {
+   "checkout-banner": {
+    "reason": {
+     "kind": "FALLTHROUGH"
+    },
+    "value": {
+     "color": "green",
+     "text": "Free shipping over $50"
+    },
+    "variation": 0
+   },
+   "new-checkout": {
+    "reason": {
+     "kind": "TARGET_MATCH"
+    },
+    "value": false,
+    "variation": 0
+   },
+   "one-click-reorder": {
+    "reason": {
+     "kind": "PREREQUISITE_FAILED",
+     "prerequisite": "new-checkout"
+    },
+    "value": false,
+    "variation": 0
+   },
+   "search-ranker": {
+    "reason": {
+     "kind": "FALLTHROUGH"
+    },
+    "value": "bm25",
+    "variation": 0
+   }
+  }
+ }
+}

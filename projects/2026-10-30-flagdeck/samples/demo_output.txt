@@ -1,0 +1,27 @@
+seeded 4 flag(s), 0 already present
+
+# evaluate (prod)
+qa-alice   checkout-banner="green"[FALLTHROUGH]  new-checkout=true[TARGET_MATCH]  one-click-reorder=false[FALLTHROUGH]  search-ranker="bm25"[FALLTHROUGH]
+vip-carol  checkout-banner="green"[FALLTHROUGH]  new-checkout=false[TARGET_MATCH]  one-click-reorder=false[PREREQUISITE_FAILED:new-checkout]  search-ranker="bm25"[FALLTHROUGH]
+dan        checkout-banner="green"[FALLTHROUGH]  new-checkout=true[RULE_MATCH:staff]  one-click-reorder=false[FALLTHROUGH]  search-ranker="bm25"[FALLTHROUGH]
+erin       checkout-banner="green"[FALLTHROUGH]  new-checkout=false[RULE_MATCH:eu-holdout]  one-click-reorder=false[PREREQUISITE_FAILED:new-checkout]  search-ranker="hybrid"[RULE_MATCH:enterprise-not-us]
+frank      checkout-banner="green"[FALLTHROUGH]  new-checkout=false[FALLTHROUGH]  one-click-reorder=false[PREREQUISITE_FAILED:new-checkout]  search-ranker="bm25"[RULE_MATCH:old-clients]
+gina       checkout-banner="green"[FALLTHROUGH]  new-checkout=false[FALLTHROUGH]  one-click-reorder=false[PREREQUISITE_FAILED:new-checkout]  search-ranker="bm25"[FALLTHROUGH]
+
+# preview: new-checkout prod fallthrough 20% -> 50%
+changed 829/5000  before={'false': 3451, 'true': 1549}  after={'false': 2622, 'true': 2378}
+flip directions among examples: [(False, True)]
+
+# optimistic concurrency
+ana saves with If-Match 1: HTTP 200, now v2
+bo saves with If-Match 1: HTTP 412 {'detail': 'flag was modified by someone else', 'current_version': 2}
+
+# validation
+cycle: HTTP 422 ['prerequisite cycle: new-checkout -> one-click-reorder -> new-checkout']
+delete prerequisite: HTTP 409 {'detail': 'flag is a prerequisite of other flags', 'dependents': ['one-click-reorder']}
+
+# audit (newest first)
+v2 update by ana   2 change(s): environments.prod.fallthrough.rollout.weights[0] 80000 -> 50000
+v1 create by seed  6 change(s)
+
+# sdk: GET /api/sdk/prod with If-None-Match -> HTTP 304

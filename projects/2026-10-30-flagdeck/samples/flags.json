@@ -1,0 +1,81 @@
+[
+  {
+    "key": "new-checkout",
+    "description": "Redesigned checkout flow, rolled out gradually.",
+    "variations": [false, true],
+    "environments": {
+      "dev": {"on": true, "off_variation": 0, "fallthrough": {"variation": 1}},
+      "prod": {
+        "on": true,
+        "off_variation": 0,
+        "targets": [{"variation": 1, "values": ["qa-alice", "qa-bob"]}, {"variation": 0, "values": ["vip-carol"]}],
+        "rules": [
+          {"id": "staff", "description": "Employees always get it",
+           "clauses": [{"attribute": "email", "op": "endsWith", "values": ["@acme.com"]}],
+           "serve": {"variation": 1}},
+          {"id": "eu-holdout", "description": "Hold out EU until legal sign-off",
+           "clauses": [{"attribute": "country", "op": "in", "values": ["DE", "FR", "GB"]}],
+           "serve": {"variation": 0}}
+        ],
+        "fallthrough": {"rollout": {"bucket_by": "key", "weights": [80000, 20000]}}
+      }
+    }
+  },
+  {
+    "key": "search-ranker",
+    "description": "Which ranking model powers search. Bucketed by org so teammates see the same results.",
+    "variations": ["bm25", "hybrid", "dense"],
+    "environments": {
+      "dev": {"on": true, "fallthrough": {"rollout": {"bucket_by": "org", "weights": [34000, 33000, 33000]}}},
+      "prod": {
+        "on": true,
+        "rules": [
+          {"id": "old-clients", "clauses": [{"attribute": "app_version", "op": "lt", "values": [4.1]}],
+           "serve": {"variation": 0}},
+          {"id": "enterprise-not-us",
+           "clauses": [{"attribute": "plan", "op": "in", "values": ["enterprise"]},
+                       {"attribute": "country", "op": "in", "values": ["US"], "negate": true}],
+           "serve": {"variation": 1}}
+        ],
+        "fallthrough": {"rollout": {"bucket_by": "org", "weights": [50000, 40000, 10000]}}
+      }
+    }
+  },
+  {
+    "key": "one-click-reorder",
+    "description": "Only meaningful once the new checkout is live for the user.",
+    "variations": [false, true],
+    "prerequisites": [{"key": "new-checkout", "variation": 1}],
+    "environments": {
+      "dev": {"on": true, "fallthrough": {"variation": 1}},
+      "prod": {
+        "on": true,
+        "rules": [
+          {"id": "beta-testers", "clauses": [{"attribute": "groups", "op": "in", "values": ["beta"]}],
+           "serve": {"variation": 1}}
+        ],
+        "fallthrough": {"rollout": {"weights": [50000, 50000]}}
+      }
+    }
+  },
+  {
+    "key": "checkout-banner",
+    "description": "Banner copy experiment (JSON object variations).",
+    "variations": [
+      {"text": "Free shipping over $50", "color": "green"},
+      {"text": "Order in the next hour for same-day dispatch", "color": "orange"}
+    ],
+    "environments": {
+      "dev": {"on": false},
+      "prod": {
+        "on": true,
+        "rules": [
+          {"id": "internal-hosts",
+           "clauses": [{"attribute": "email", "op": "matches", "values": ["^[a-z0-9.-]+@(eng|qa)\\.acme\\.com$"]}],
+           "serve": {"variation": 1}}
+        ],
+        "fallthrough": {"rollout": {"bucket_by": "device_id", "weights": [50000, 50000]}}
+      }
+    }
+  }
+]

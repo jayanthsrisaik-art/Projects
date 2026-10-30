@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>flagdeck</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <header>
+    <h1>flagdeck</h1>
+    <label>Environment
+      <select id="env" data-testid="env"><option value="dev">dev</option><option value="prod">prod</option></select>
+    </label>
+    <label>Acting as <input id="actor" data-testid="actor" size="10"></label>
+  </header>
+  <div id="status" class="status" role="status" data-testid="status"></div>
+  <main>
+    <aside>
+      <button id="new-flag" data-testid="new-flag">+ New flag</button>
+      <ul id="flag-list"></ul>
+    </aside>
+    <section>
+      <nav>
+        <button data-tab="editor" class="active">Editor</button>
+        <button data-tab="audit">Audit log</button>
+        <button data-tab="playground">Playground</button>
+      </nav>
+      <div id="tab-editor">
+        <h2 id="editor-title"></h2>
+        <div id="conflict" class="conflict" hidden data-testid="conflict">
+          <span id="conflict-text"></span>
+          <button id="reload-latest" data-testid="reload-latest">Discard draft, load latest</button>
+          <button id="overwrite" data-testid="overwrite">Overwrite with my draft</button>
+        </div>
+        <textarea id="editor-json" data-testid="editor-json" spellcheck="false"></textarea>
+        <div class="actions">
+          <input id="comment" data-testid="comment" placeholder="Change comment (shown in audit log)">
+          <button id="preview-btn" data-testid="preview">Preview impact</button>
+          <button id="save" class="primary" data-testid="save">Save</button>
+          <button id="delete" class="danger" data-testid="delete">Delete</button>
+        </div>
+        <div id="preview" data-testid="preview-out"></div>
+      </div>
+      <div id="tab-audit" hidden><div id="audit"></div></div>
+      <div id="tab-playground" hidden>
+        <p>Evaluate every flag for a context on the server, and again locally with the TypeScript SDK.</p>
+        <textarea id="context-json" data-testid="context-json" spellcheck="false">{"key": "dan", "email": "dan@acme.com", "country": "FR", "plan": "free", "app_version": 4.2, "org": "org-1"}</textarea>
+        <div class="actions"><button id="run-eval" class="primary" data-testid="run-eval">Evaluate</button></div>
+        <div id="playground-out"></div>
+      </div>
+    </section>
+  </main>
+  <script type="module" src="/dist/main.js"></script>
+</body>
+</html>

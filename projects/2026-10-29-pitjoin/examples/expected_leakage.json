@@ -1,0 +1,72 @@
+{
+  "entity_rows": 9,
+  "views": [
+    "customer_daily",
+    "merchant_risk",
+    "customer_profile"
+  ],
+  "strategies": {
+    "naive_latest": {
+      "total": {
+        "pairs": 27,
+        "future_event": 12,
+        "not_yet_known": 1,
+        "stale": 1,
+        "value_mismatch": 14,
+        "rows_affected": 8,
+        "rows_affected_pct": 88.89
+      },
+      "per_view": {
+        "customer_daily": {
+          "future_event": 4,
+          "not_yet_known": 1,
+          "stale": 1,
+          "value_mismatch": 6
+        },
+        "merchant_risk": {
+          "future_event": 5,
+          "not_yet_known": 0,
+          "stale": 0,
+          "value_mismatch": 5
+        },
+        "customer_profile": {
+          "future_event": 3,
+          "not_yet_known": 0,
+          "stale": 0,
+          "value_mismatch": 3
+        }
+      }
+    },
+    "asof_event_only": {
+      "total": {
+        "pairs": 27,
+        "future_event": 0,
+        "not_yet_known": 3,
+        "stale": 0,
+        "value_mismatch": 3,
+        "rows_affected": 3,
+        "rows_affected_pct": 33.33
+      },
+      "per_view": {
+        "customer_daily": {
+          "future_event": 0,
+          "not_yet_known": 3,
+          "stale": 0,
+          "value_mismatch": 3
+        },
+        "merchant_risk": {
+          "future_event": 0,
+          "not_yet_known": 0,
+          "stale": 0,
+          "value_mismatch": 0
+        },
+        "customer_profile": {
+          "future_event": 0,
+          "not_yet_known": 0,
+          "stale": 0,
+          "value_mismatch": 0
+        }
+      }
+    }
+  }
+}

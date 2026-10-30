@@ -1,0 +1,25 @@
+now = 2026-10-30T12:00:00+00:00 (Fri 08:00 in New York)
+
+# 1. Fall-back Sunday: the 00:00-04:00 night window holds 5 real hours
+  2026-11-01T04:00:00Z  host Sun 11-01 00:00 EDT
+  2026-11-01T05:00:00Z  host Sun 11-01 01:00 EDT
+  2026-11-01T06:00:00Z  host Sun 11-01 01:00 EST
+  2026-11-01T07:00:00Z  host Sun 11-01 02:00 EST
+  2026-11-01T08:00:00Z  host Sun 11-01 03:00 EST
+
+# 2. Intro call, Mon 2026-11-02, seen from Tokyo
+  14 slots; first Mon 11-02 23:00 JST, last Tue 11-03 06:30 JST
+
+# 3. Twelve clients race for Mon 10:00 New York
+  201 Created: 1   409 slot_unavailable: 11
+  slots left that day: 11 (10:00 taken, 09:30 and 10:30 lost to the 15-min buffer)
+
+# 4. Retry with the same Idempotency-Key replays instead of double-booking
+  first: 201  retry: 200 replayed=True same id=True
+
+# 5. Reschedule Ada atomically to Tue 13:00, then cancel
+  old status=cancelled -> new start Tue 11-03 13:00 EST
+  cancel with wrong token: 403; with token: 200 status=cancelled
+
+# 6. Office hours (host in London, 15:00-17:00 GMT) seen from New York
+  10:00 EST, 10:20 EST, 10:40 EST, 11:00 EST, 11:20 EST, 11:40 EST

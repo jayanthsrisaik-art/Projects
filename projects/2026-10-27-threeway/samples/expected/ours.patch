@@ -1,0 +1,14 @@
+--- samples/base.py
++++ samples/ours.py
+@@ -7,9 +7,10 @@
+ 
+ 
+ def total(items):
++    """Sum price * qty over the cart."""
+     result = 0
+     for item in items:
+-        result += item["price"]
++        result += item["price"] * item.get("qty", 1)
+     return result
+ 
+ 

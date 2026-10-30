@@ -1,0 +1,4 @@
+# Runtime: Python 3.10+ standard library only.
+# Optional: git (comparison in `bench` and interop tests), GNU patch (interop test).
+# Tests:
+pytest>=8.0,<9

@@ -1,0 +1,5 @@
+tool                disjoint  identical  overlap  silent-wrong  spurious-conf
+threeway               1.000      0.990    1.000             0              1
+ablation-raw           1.000      0.970    1.000             1              2
+baseline-difflib       1.000      0.990    1.000             0              1
+git-merge-file         1.000      0.990    1.000             0              1

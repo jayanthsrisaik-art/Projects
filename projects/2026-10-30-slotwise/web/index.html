@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>slotwise</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <header>
+    <h1>slotwise</h1>
+    <label>Meeting <select id="event-type"></select></label>
+    <label>Your timezone <select id="tz"></select></label>
+  </header>
+  <main>
+    <p id="host-note"></p>
+    <nav>
+      <button id="prev" type="button">&larr; Prev</button>
+      <strong id="week-label"></strong>
+      <button id="next" type="button">Next &rarr;</button>
+    </nav>
+    <div id="grid" class="grid"></div>
+    <p id="status" role="status"></p>
+    <form id="book-form" hidden>
+      <h2>Book <span id="picked"></span></h2>
+      <label>Name <input id="name" required maxlength="100"></label>
+      <label>Email <input id="email" type="email" required maxlength="200"></label>
+      <button type="submit" id="confirm">Confirm booking</button>
+    </form>
+    <div id="confirmation" hidden></div>
+  </main>
+  <script type="module" src="/dist/main.js"></script>
+</body>
+</html>

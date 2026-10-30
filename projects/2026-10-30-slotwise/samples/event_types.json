@@ -1,0 +1,51 @@
+[
+  {
+    "slug": "intro-call",
+    "title": "Intro call",
+    "host_tz": "America/New_York",
+    "duration_min": 30,
+    "step_min": 30,
+    "buffer_before_min": 0,
+    "buffer_after_min": 15,
+    "min_notice_min": 240,
+    "max_days_ahead": 30,
+    "daily_cap": 4,
+    "weekly": {
+      "mon": [["09:00", "12:00"], ["13:00", "17:00"]],
+      "tue": [["09:00", "12:00"], ["13:00", "17:00"]],
+      "wed": [["09:00", "12:00"]],
+      "thu": [["09:00", "12:00"], ["13:00", "17:00"]],
+      "fri": [["09:00", "12:00"]]
+    },
+    "overrides": {
+      "2026-11-26": [],
+      "2026-11-07": [["10:00", "12:00"]]
+    }
+  },
+  {
+    "slug": "night-support",
+    "title": "Night support shift handover",
+    "host_tz": "America/New_York",
+    "duration_min": 60,
+    "step_min": 60,
+    "max_days_ahead": 30,
+    "weekly": {
+      "sun": [["00:00", "04:00"]]
+    }
+  },
+  {
+    "slug": "office-hours",
+    "title": "Office hours",
+    "host_tz": "Europe/London",
+    "duration_min": 20,
+    "step_min": 20,
+    "buffer_before_min": 10,
+    "buffer_after_min": 10,
+    "min_notice_min": 60,
+    "max_days_ahead": 14,
+    "weekly": {
+      "tue": [["15:00", "17:00"]],
+      "thu": [["15:00", "17:00"]]
+    }
+  }
+]

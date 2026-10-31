@@ -1,0 +1,16 @@
+== data/test.jsonl (400 docs) ==
+baseline_regex  P=0.642 R=0.395 F1=0.489 leak_rate=0.605 (638/1054) false_pos_redactions=194
+veilgate        P=0.964 R=0.974 F1=0.969 leak_rate=0.026 (27/1054) false_pos_redactions=38
+per-type (veilgate vs baseline recall):
+  EMAIL        support= 144  veilgate P=1.000 R=1.000   baseline P=1.000 R=1.000
+  PHONE        support= 155  veilgate P=0.803 R=1.000   baseline P=0.462 R=0.626
+  CREDIT_CARD  support=  75  veilgate P=1.000 R=1.000   baseline P=0.604 R=0.773
+  SSN          support=  42  veilgate P=1.000 R=1.000   baseline P=0.500 R=1.000
+  IBAN         support=  31  veilgate P=1.000 R=1.000   baseline P=0.000 R=0.000
+  IPV4         support=  75  veilgate P=1.000 R=1.000   baseline P=0.658 R=1.000
+  ADDRESS      support=  91  veilgate P=1.000 R=1.000   baseline P=0.000 R=0.000
+  PERSON       support= 441  veilgate P=1.000 R=0.939   baseline P=0.000 R=0.000
+round-trip (echo model): exact=0.800 all-values-restored=1.000
+egress guard: caught 0/27 leaky docs, falsely flagged 42/373 clean docs
+veilgate leak examples: PERSON: 'Kwame Achterberg' in test-0059; PERSON: 'Bjorn Mensah' in test-0072; PERSON: 'Dagny' in test-0093; PERSON: 'Bjorn Tanaka' in test-0103; PERSON: 'Haruto Achterberg' in test-0109
+veilgate false-positive examples: PHONE: '6625551890' in test-0000; PHONE: '3753925140' in test-0002; PHONE: '9155663541' in test-0004; PHONE: '6896603697' in test-0007; PHONE: '7275367283' in test-0010

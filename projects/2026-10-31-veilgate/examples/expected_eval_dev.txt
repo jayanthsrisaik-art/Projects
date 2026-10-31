@@ -1,0 +1,14 @@
+== data/dev.jsonl (200 docs) ==
+baseline_regex  P=0.608 R=0.432 F1=0.505 leak_rate=0.568 (255/449) false_pos_redactions=111
+veilgate        P=1.000 R=1.000 F1=1.000 leak_rate=0.000 (0/449) false_pos_redactions=0
+per-type (veilgate vs baseline recall):
+  EMAIL        support=  68  veilgate P=1.000 R=1.000   baseline P=1.000 R=1.000
+  PHONE        support=  58  veilgate P=1.000 R=1.000   baseline P=0.361 R=0.672
+  CREDIT_CARD  support=  26  veilgate P=1.000 R=1.000   baseline P=0.537 R=0.846
+  SSN          support=  21  veilgate P=1.000 R=1.000   baseline P=0.500 R=1.000
+  IBAN         support=  14  veilgate P=1.000 R=1.000   baseline P=0.000 R=0.000
+  IPV4         support=  44  veilgate P=1.000 R=1.000   baseline P=0.733 R=1.000
+  ADDRESS      support=  20  veilgate P=1.000 R=1.000   baseline P=0.000 R=0.000
+  PERSON       support= 198  veilgate P=1.000 R=1.000   baseline P=0.000 R=0.000
+round-trip (echo model): exact=0.905 all-values-restored=1.000
+egress guard: caught 0/0 leaky docs, falsely flagged 41/200 clean docs

@@ -1,0 +1,7 @@
+Hi, my name is Ana Ruiz and I was charged twice on card 4111 1111 1111 1111.
+Please email ana.ruiz@example.com or call (415) 555-0134. Order #4155550134 is the duplicate.
+Ms. Ana Ruiz lives at 42 Elm Street. Our server 10.0.4.17 logged it while running version 1.2.3.4.
+Refund to IBAN DE89 3704 0044 0532 0130 00 please. I already spoke with Kwame Mensah from billing.
+Regards,
+Priya Natarajan
+

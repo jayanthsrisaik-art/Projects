@@ -1,0 +1,9 @@
+--- audit (what left the process) ---
+Hi, my name is <PERSON_1> and I was charged twice on card <CREDIT_CARD_1>.
+Please email <EMAIL_1> or call <PHONE_1>. Order #4155550134 is the duplicate.
+Ms. <PERSON_1> lives at <ADDRESS_1>. Our server <IPV4_1> logged it while running version 1.2.3.4.
+Refund to IBAN <IBAN_1> please. I already spoke with <PERSON_2> from billing.
+Regards,
+<PERSON_3>
+
+redacted={'PERSON': 4, 'CREDIT_CARD': 1, 'EMAIL': 1, 'PHONE': 1, 'ADDRESS': 1, 'IPV4': 1, 'IBAN': 1} egress_findings=0 unknown_placeholders=[]

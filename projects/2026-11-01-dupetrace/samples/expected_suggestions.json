@@ -1,0 +1,58 @@
+[
+  {
+    "id": "Q001",
+    "likely_duplicate": true,
+    "suggestions": [
+      {
+        "id": "S001",
+        "title": "Coupon fails with KeyError at checkout",
+        "score": 0.9885,
+        "reasons": [
+          "same exception type KeyError",
+          "identical normalised message: \"'currency_code'\"",
+          "3 shared frame(s), e.g. checkout/pricing:lookup_tax_rate",
+          "same innermost frame"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "Q002",
+    "likely_duplicate": false,
+    "suggestions": [
+      {
+        "id": "S003",
+        "title": "Search filters throw TypeError",
+        "score": 0.2859,
+        "reasons": [
+          "same exception type TypeError",
+          "identical normalised message: \"Cannot read properties of undefined (reading 'facet_name')\"",
+          "same component search"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "Q003",
+    "likely_duplicate": false,
+    "suggestions": []
+  },
+  {
+    "id": "Q004",
+    "likely_duplicate": true,
+    "suggestions": [
+      {
+        "id": "S002",
+        "title": "Coupon fails with KeyError at checkout",
+        "score": 0.9957,
+        "reasons": [
+          "same exception type KeyError",
+          "identical normalised message: \"'discount_pct'\"",
+          "2 shared frame(s), e.g. checkout/coupons:validate_cart",
+          "same innermost frame",
+          "same component checkout"
+        ]
+      }
+    ]
+  }
+]

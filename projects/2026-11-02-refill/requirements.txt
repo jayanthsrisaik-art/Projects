@@ -1,0 +1,3 @@
+# Runtime: Python 3.10+ standard library only (sqlite3, json, argparse, hashlib).
+# Tests:
+pytest>=7.4,<10

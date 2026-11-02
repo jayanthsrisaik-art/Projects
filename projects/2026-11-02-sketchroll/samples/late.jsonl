@@ -1,0 +1,10 @@
+{"ts":"2026-10-01T13:45:53Z","user_id":"u019419","endpoint":"/login","latency_ms":130.817,"status":200}
+{"ts":"2026-10-01T16:46:39Z","user_id":"u001325","endpoint":"/checkout","latency_ms":151.65,"status":200}
+{"ts":"2026-10-02T11:16:13Z","user_id":"u008594","endpoint":"/search","latency_ms":118.828,"status":200}
+{"ts":"2026-10-02T11:29:36Z","user_id":"u006922","endpoint":"/checkout","latency_ms":116.021,"status":200}
+{"ts":"2026-10-02T13:26:03Z","user_id":"u004620","endpoint":"/product","latency_ms":42.587,"status":200}
+{"ts":"2026-10-02T14:28:29Z","user_id":"u011828","endpoint":"/search","latency_ms":146.261,"status":200}
+{"ts":"2026-10-02T15:44:58Z","user_id":"u003293","endpoint":"/login","latency_ms":97.183,"status":200}
+{"ts":"2026-10-02T16:50:41Z","user_id":"u014084","endpoint":"/product","latency_ms":32.148,"status":200}
+{"ts":"2026-10-02T18:33:23Z","user_id":"u003407","endpoint":"/checkout","latency_ms":42.991,"status":200}
+{"ts":"2026-10-02T23:45:41Z","user_id":"u008511","endpoint":"/product","latency_ms":75.433,"status":200}

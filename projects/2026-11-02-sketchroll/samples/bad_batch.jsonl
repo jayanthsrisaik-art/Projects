@@ -1,0 +1,9 @@
+{"ts":"2026-10-02T10:15:00Z","user_id":"u900001","endpoint":"/search","latency_ms":91.5,"status":200}
+{"ts":"2026-10-02T10:16:00","user_id":"u900002","endpoint":"/search","latency_ms":80.0,"status":200}
+{"ts":"2026-10-02T10:17:00Z","user_id":"","endpoint":"/search","latency_ms":80.0,"status":200}
+{"ts":"2026-10-02T10:18:00Z","user_id":"u900003","endpoint":"search","latency_ms":80.0,"status":200}
+{"ts":"2026-10-02T10:19:00Z","user_id":"u900004","endpoint":"/cart","latency_ms":-3,"status":200}
+{"ts":"2026-10-02T10:20:00Z","user_id":"u900005","endpoint":"/cart","latency_ms":55.0,"status":"200"}
+{"ts":"2026-10-02T10:21:00Z","user_id":"u900006","endpoint":"/cart","latency_ms":55.0}
+{"ts":"2026-10-02T10:22:00Z","user_id":"u900007","endpoint":"/cart", "latency_ms":
+{"ts":"2026-10-02T12:22:00+02:00","user_id":"u900008","endpoint":"/cart","latency_ms":42.0,"status":503}

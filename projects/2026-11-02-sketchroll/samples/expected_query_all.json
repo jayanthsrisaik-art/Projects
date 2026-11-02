@@ -1,0 +1,15 @@
+{
+  "start": "2026-10-01T00:00:00Z",
+  "end": "2026-10-03T00:00:00Z",
+  "endpoints": "ALL",
+  "requests": 802,
+  "errors": 4,
+  "error_rate": 0.004988,
+  "distinct_users": 630,
+  "latency_mean_ms": 107.868,
+  "latency_min_ms": 13.797,
+  "latency_max_ms": 4638.667,
+  "latency_p50_ms": 72.973,
+  "latency_p95_ms": 257.272,
+  "latency_p99_ms": 415.778
+}

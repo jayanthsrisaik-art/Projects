@@ -1,0 +1,33 @@
+events=210000 (late=4219) days=14 compacted_day_rows=60 queries=54
+late batch: {'status': 'ingested', 'accepted': 4219, 'cells_touched': 1313}  redelivery: skipped_duplicate
+invariant violations: 0   exact counters (requests/errors/sum/max) match truth: True
+
+relative error vs exact     |  sketch median   sketch max  |  naive median    naive max
+----------------------------------------------------------------------------------------
+distinct_users              |        0.75%        3.08% |       38.79%      871.00%
+latency_p50_ms              |        0.45%        0.98% |        0.39%       19.20%
+latency_p95_ms              |        0.37%        0.98% |        2.83%       24.64%
+latency_p99_ms              |        0.53%        0.99% |       10.10%       46.36%
+
+share of quantile answers within DDSketch alpha=1%: latency_p50_ms: sketch 100% / naive 69%, latency_p95_ms: sketch 100% / naive 15%, latency_p99_ms: sketch 100% / naive 11%
+storage: raw JSONL 21,890,484 B -> 300 rollup rows, HLL 131,988 B + DDSketch 78,411 B
+
+window        scope        users  sketch   naive        p99   sketch    naive
+full range    /checkout     8560    8427   19981      960.5    963.1    774.5
+full range    ALL          19488   19205  189228      507.5    507.8    274.8
+first week    /checkout     5373    5404   10037      997.0   1002.4    794.0
+first week    ALL          17412   17211   94722      502.9    507.8    274.5
+day 1         /checkout     1146    1157    1465      835.6    837.3    745.8
+day 1         ALL           6775    6596   13536      480.9    478.3    270.3
+day 4         /checkout     1131    1133    1431      843.2    837.3    716.0
+day 4         ALL           6797    6862   13570      474.2    478.3    263.1
+day 7         /checkout     1106    1101    1441      790.1    788.5    681.3
+day 7         ALL           6817    6798   13563      480.5    478.3    261.1
+day 10        /checkout     1130    1155    1448      838.0    837.3    681.1
+day 10        ALL           6801    6641   13517      467.8    468.8    254.5
+day 13        /checkout     1065    1065    1378      901.6    907.0    739.8
+day 13        ALL           6759    6732   13523      472.2    468.8    262.1
+last 6 hours  /checkout      341     342     370      894.9    889.1    742.5
+last 6 hours  ALL           2455    2482    3489      466.9    468.8    256.1
+last hour     /checkout       32      32      32      690.5    685.5    690.5
+last hour     ALL            283     285     309      437.7    441.5    234.8

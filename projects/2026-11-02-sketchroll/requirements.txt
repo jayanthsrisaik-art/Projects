@@ -1,0 +1,3 @@
+# Runtime: Python 3.10+ standard library only (sqlite3, hashlib, zlib).
+# Test dependency:
+pytest>=8,<10

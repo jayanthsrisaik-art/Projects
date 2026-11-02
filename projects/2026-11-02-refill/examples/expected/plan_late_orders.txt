@@ -1,0 +1,10 @@
+roots: 2 partition(s)
+plan: 72 of 463 derived partitions, 28 wave(s)
+  daily_region_sales        2  2026-10-05..2026-10-06
+  cumulative_net           27  2026-10-05..2026-10-31
+  dod_change                3  2026-10-05..2026-10-07
+  monthly_region_sales      1  2026-10
+  daily_share_of_month     31  2026-10-01..2026-10-31
+  region_sales_7d           8  2026-10-05..2026-10-12
+why daily_share_of_month:2026-10-02: daily_share_of_month:2026-10-02 <- monthly_region_sales:2026-10 <- daily_region_sales:2026-10-05 <- raw_orders:2026-10-05
+why region_sales_7d:2026-10-12: region_sales_7d:2026-10-12 <- daily_region_sales:2026-10-06 <- raw_orders:2026-10-06

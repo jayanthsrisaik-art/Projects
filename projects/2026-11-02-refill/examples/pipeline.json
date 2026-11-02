@@ -1,0 +1,55 @@
+{
+  "range": {"start": "2026-08-01", "end": "2026-10-31"},
+  "tables": {
+    "raw_orders":   {"grain": "day",  "source": true,
+                     "columns": ["order_id INTEGER", "customer_id INTEGER", "amount_cents INTEGER"]},
+    "raw_refunds":  {"grain": "day",  "source": true,
+                     "columns": ["order_id INTEGER", "customer_id INTEGER", "amount_cents INTEGER"]},
+    "dim_customer": {"grain": "none", "source": true,
+                     "columns": ["customer_id INTEGER", "region TEXT"]},
+
+    "daily_region_sales": {
+      "grain": "day", "sql": "sql/daily_region_sales.sql",
+      "columns": ["region TEXT", "orders INTEGER", "gross_cents INTEGER", "refund_cents INTEGER", "net_cents INTEGER"],
+      "deps": [
+        {"table": "raw_orders",   "mapping": "same"},
+        {"table": "raw_refunds",  "mapping": "same"},
+        {"table": "dim_customer", "mapping": "all"}
+      ]
+    },
+    "region_sales_7d": {
+      "grain": "day", "sql": "sql/region_sales_7d.sql",
+      "columns": ["region TEXT", "orders_7d INTEGER", "net_7d_cents INTEGER", "days_present INTEGER"],
+      "deps": [{"table": "daily_region_sales", "mapping": "window", "n": 7}]
+    },
+    "monthly_region_sales": {
+      "grain": "month", "sql": "sql/monthly_region_sales.sql",
+      "columns": ["region TEXT", "orders INTEGER", "gross_cents INTEGER", "refund_cents INTEGER", "net_cents INTEGER"],
+      "deps": [{"table": "daily_region_sales", "mapping": "rollup"}]
+    },
+    "cumulative_net": {
+      "grain": "day", "sql": "sql/cumulative_net.sql",
+      "columns": ["region TEXT", "cum_net_cents INTEGER"],
+      "deps": [
+        {"table": "daily_region_sales", "mapping": "same"},
+        {"table": "cumulative_net",     "mapping": "lag", "n": 1}
+      ]
+    },
+    "dod_change": {
+      "grain": "day", "sql": "sql/dod_change.sql",
+      "columns": ["region TEXT", "net_cents INTEGER", "prev_net_cents INTEGER", "delta_cents INTEGER"],
+      "deps": [
+        {"table": "daily_region_sales", "mapping": "same"},
+        {"table": "daily_region_sales", "mapping": "lag", "n": 1}
+      ]
+    },
+    "daily_share_of_month": {
+      "grain": "day", "sql": "sql/daily_share_of_month.sql",
+      "columns": ["region TEXT", "net_cents INTEGER", "month_net_cents INTEGER", "share REAL"],
+      "deps": [
+        {"table": "daily_region_sales",   "mapping": "same"},
+        {"table": "monthly_region_sales", "mapping": "month_of"}
+      ]
+    }
+  }
+}

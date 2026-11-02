@@ -1,0 +1,5 @@
+# Sample change sets (one scenario per line) accepted by `refill plan -c ...`
+late_orders        raw_orders:2026-10-05..2026-10-06
+refund_fix         raw_refunds:2026-09-14
+region_move        dim_customer:*
+logic_change       monthly_region_sales:2026-09

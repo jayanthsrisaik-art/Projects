@@ -1,0 +1,170 @@
+{
+  "seed": 7,
+  "derived_partitions": 463,
+  "scenarios": [
+    {
+      "scenario": "late_orders",
+      "description": "30 late-arriving orders land in 2026-10-05 and 2026-10-06",
+      "changes": [
+        "raw_orders:2026-10-05..2026-10-06"
+      ],
+      "partitions_actually_changed": 72,
+      "plan_waves": 28,
+      "strategies": {
+        "full_rebuild": {
+          "planned": 463,
+          "executed": 463,
+          "skipped": 0,
+          "wrong_partitions": 0
+        },
+        "from_earliest": {
+          "planned": 136,
+          "executed": 136,
+          "skipped": 0,
+          "wrong_partitions": 4
+        },
+        "same_key": {
+          "planned": 11,
+          "executed": 11,
+          "skipped": 0,
+          "wrong_partitions": 61
+        },
+        "refill": {
+          "planned": 72,
+          "executed": 72,
+          "skipped": 0,
+          "wrong_partitions": 0
+        },
+        "refill_cutoff": {
+          "planned": 72,
+          "executed": 72,
+          "skipped": 0,
+          "wrong_partitions": 0
+        }
+      }
+    },
+    {
+      "scenario": "refund_fix",
+      "description": "refund amounts on 2026-09-14 were loaded at half value",
+      "changes": [
+        "raw_refunds:2026-09-14"
+      ],
+      "partitions_actually_changed": 89,
+      "plan_waves": 49,
+      "strategies": {
+        "full_rebuild": {
+          "planned": 463,
+          "executed": 463,
+          "skipped": 0,
+          "wrong_partitions": 0
+        },
+        "from_earliest": {
+          "planned": 242,
+          "executed": 242,
+          "skipped": 0,
+          "wrong_partitions": 13
+        },
+        "same_key": {
+          "planned": 6,
+          "executed": 6,
+          "skipped": 0,
+          "wrong_partitions": 83
+        },
+        "refill": {
+          "planned": 89,
+          "executed": 89,
+          "skipped": 0,
+          "wrong_partitions": 0
+        },
+        "refill_cutoff": {
+          "planned": 89,
+          "executed": 89,
+          "skipped": 0,
+          "wrong_partitions": 0
+        }
+      }
+    },
+    {
+      "scenario": "region_move",
+      "description": "one low-activity customer is re-assigned to another region",
+      "changes": [
+        "dim_customer:*"
+      ],
+      "partitions_actually_changed": 232,
+      "plan_waves": 93,
+      "strategies": {
+        "full_rebuild": {
+          "planned": 463,
+          "executed": 463,
+          "skipped": 0,
+          "wrong_partitions": 0
+        },
+        "from_earliest": {
+          "planned": 463,
+          "executed": 463,
+          "skipped": 0,
+          "wrong_partitions": 0
+        },
+        "same_key": {
+          "planned": 463,
+          "executed": 463,
+          "skipped": 0,
+          "wrong_partitions": 0
+        },
+        "refill": {
+          "planned": 463,
+          "executed": 463,
+          "skipped": 0,
+          "wrong_partitions": 0
+        },
+        "refill_cutoff": {
+          "planned": 463,
+          "executed": 316,
+          "skipped": 147,
+          "wrong_partitions": 0
+        }
+      }
+    },
+    {
+      "scenario": "relanded_identical",
+      "description": "raw_orders 2026-08-20 is re-delivered with identical rows",
+      "changes": [
+        "raw_orders:2026-08-20"
+      ],
+      "partitions_actually_changed": 0,
+      "plan_waves": 74,
+      "strategies": {
+        "full_rebuild": {
+          "planned": 463,
+          "executed": 463,
+          "skipped": 0,
+          "wrong_partitions": 0
+        },
+        "from_earliest": {
+          "planned": 368,
+          "executed": 368,
+          "skipped": 0,
+          "wrong_partitions": 0
+        },
+        "same_key": {
+          "planned": 6,
+          "executed": 6,
+          "skipped": 0,
+          "wrong_partitions": 0
+        },
+        "refill": {
+          "planned": 115,
+          "executed": 115,
+          "skipped": 0,
+          "wrong_partitions": 0
+        },
+        "refill_cutoff": {
+          "planned": 115,
+          "executed": 1,
+          "skipped": 114,
+          "wrong_partitions": 0
+        }
+      }
+    }
+  ]
+}

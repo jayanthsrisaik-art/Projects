@@ -1,0 +1,19 @@
+year 2026: 28 job x zone pairs, 248445 oracle fires
+zone                 job          fires  engine -/+  naive -/+ naive dup
+America/New_York     daily-0230     365     0/0        1/1             0
+America/New_York     every-15m    35040     0/0        4/4             4
+America/New_York     hourly-45     8760     0/0        1/1             1
+America/New_York     night-5m     17520     0/0       12/12           12
+Europe/London        daily-0130     365     0/0        1/1             0
+Europe/London        every-15m    35040     0/0        4/4             4
+Europe/London        hourly-45     8760     0/0        1/1             1
+Europe/London        night-5m     17520     0/0       12/12           12
+Australia/Lord_Howe  every-15m    35040     0/0        2/2             2
+Australia/Lord_Howe  hourly-45     8761     0/0        1/0             0
+Australia/Lord_Howe  night-5m     17520     0/0        6/6             6
+America/Santiago     every-15m    35040     0/0        4/4             4
+America/Santiago     hourly-45     8760     0/0        1/1             1
+America/Santiago     night-5m     17508     0/0        0/12           12
+engine: missing=0 extra=0
+naive : missing=50 extra=61 duplicate_instants=59 pairs_wrong=14/28
+time  : engine 2.774s vs minute-scan oracle 37.591s

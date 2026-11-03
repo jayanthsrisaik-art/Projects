@@ -1,0 +1,5 @@
+# Runtime: Python 3.9+ standard library only (zoneinfo, datetime, heapq, argparse).
+# On systems without an IANA tz database (e.g. Windows) also install:
+#   tzdata>=2024.1
+# Tests:
+pytest>=7.4,<10

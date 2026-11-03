@@ -1,0 +1,19 @@
+# DST-affected occurrences 2026-01-01T00:00:00 .. 2027-01-01T00:00:00
+job              wall time         status         fires actual run (local)
+nightly-backup   2026-03-08 02:30  shifted        yes   2026-03-08T03:00:00-04:00
+invoice-run      2026-11-01 01:30  overlap-first  yes   2026-11-01T01:30:00-04:00
+invoice-run      2026-11-01 01:30  suppressed     no    -
+metrics-rollup   2026-03-29 01:00  skipped        no    -
+metrics-rollup   2026-03-29 01:15  skipped        no    -
+metrics-rollup   2026-03-29 01:30  skipped        no    -
+metrics-rollup   2026-03-29 01:45  skipped        no    -
+metrics-rollup   2026-10-25 01:00  overlap-first  yes   2026-10-25T01:00:00+01:00
+metrics-rollup   2026-10-25 01:15  overlap-first  yes   2026-10-25T01:15:00+01:00
+metrics-rollup   2026-10-25 01:30  overlap-first  yes   2026-10-25T01:30:00+01:00
+metrics-rollup   2026-10-25 01:45  overlap-first  yes   2026-10-25T01:45:00+01:00
+metrics-rollup   2026-10-25 01:00  repeat         yes   2026-10-25T01:00:00+00:00
+metrics-rollup   2026-10-25 01:15  repeat         yes   2026-10-25T01:15:00+00:00
+metrics-rollup   2026-10-25 01:30  repeat         yes   2026-10-25T01:30:00+00:00
+metrics-rollup   2026-10-25 01:45  repeat         yes   2026-10-25T01:45:00+00:00
+island-report    2026-10-04 02:15  shifted        yes   2026-10-04T02:30:00+11:00
+# unaffected: board-pack, eu-settlement, payroll

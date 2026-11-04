@@ -1,0 +1,85 @@
+{
+  "rows": 1257,
+  "classes": [
+    "0",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9"
+  ],
+  "method": "prune_by_noise_rate",
+  "model": "rf",
+  "folds": 5,
+  "seed": 0,
+  "flagged": 245,
+  "estimated_noise_rate": 0.1951,
+  "top_confusions": [
+    {
+      "given": "7",
+      "likely_true": "1",
+      "est_rows": 29.9
+    },
+    {
+      "given": "8",
+      "likely_true": "3",
+      "est_rows": 29.6
+    },
+    {
+      "given": "1",
+      "likely_true": "7",
+      "est_rows": 28.1
+    },
+    {
+      "given": "6",
+      "likely_true": "5",
+      "est_rows": 27.2
+    },
+    {
+      "given": "5",
+      "likely_true": "6",
+      "est_rows": 25.1
+    },
+    {
+      "given": "4",
+      "likely_true": "9",
+      "est_rows": 24.8
+    },
+    {
+      "given": "3",
+      "likely_true": "8",
+      "est_rows": 22.4
+    },
+    {
+      "given": "3",
+      "likely_true": "2",
+      "est_rows": 19.6
+    },
+    {
+      "given": "9",
+      "likely_true": "4",
+      "est_rows": 19.6
+    },
+    {
+      "given": "6",
+      "likely_true": "0",
+      "est_rows": 17.3
+    }
+  ],
+  "per_class_threshold": {
+    "0": 0.6634,
+    "1": 0.4933,
+    "2": 0.5881,
+    "3": 0.4562,
+    "4": 0.5557,
+    "5": 0.4862,
+    "6": 0.5102,
+    "7": 0.4981,
+    "8": 0.4045,
+    "9": 0.4446
+  }
+}

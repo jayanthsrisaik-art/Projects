@@ -1,0 +1,78 @@
+
+== asymmetric noise, rate 0.1 (3 seeds) ==
+   noise rate true 0.100±0.000  est 0.101±0.003  noise-matrix MAE 0.004±0.001
+   detector                         precision          recall              F1
+   cl_confident_joint             0.996±0.005     0.693±0.016     0.817±0.013
+   cl_prune_by_noise_rate         0.905±0.022     0.899±0.013     0.902±0.005
+   cl_both                        0.996±0.005     0.693±0.016     0.817±0.013
+   cl_pbnr_IN_SAMPLE_leaky        0.000±0.000     0.000±0.000     0.000±0.000
+   argmax_disagree                0.776±0.009     0.992±0.006     0.871±0.007
+   self_conf_lt_0.5               0.355±0.004     1.000±0.000     0.524±0.004
+   lowest_conf_oracle_k           0.876±0.004     0.876±0.004     0.876±0.004
+   random_same_k                  0.094±0.020     0.093±0.016     0.093±0.018
+   clean-test accuracy: noisy_labels 0.968±0.005, clean_labels_oracle 0.971±0.005, pruned_cl_prune_by_noise_rate 0.966±0.006, pruned_cl_both 0.966±0.004, pruned_argmax_disagree 0.960±0.002, pruned_random_same_k 0.966±0.004
+
+== asymmetric noise, rate 0.2 (3 seeds) ==
+   noise rate true 0.199±0.000  est 0.199±0.007  noise-matrix MAE 0.005±0.000
+   detector                         precision          recall              F1
+   cl_confident_joint             0.966±0.012     0.708±0.023     0.817±0.011
+   cl_prune_by_noise_rate         0.896±0.008     0.892±0.021     0.894±0.010
+   cl_both                        0.973±0.010     0.707±0.024     0.818±0.012
+   cl_pbnr_IN_SAMPLE_leaky        0.000±0.000     0.000±0.000     0.000±0.000
+   argmax_disagree                0.805±0.002     0.972±0.003     0.881±0.002
+   self_conf_lt_0.5               0.459±0.008     1.000±0.000     0.629±0.008
+   lowest_conf_oracle_k           0.835±0.011     0.835±0.011     0.835±0.011
+   random_same_k                  0.201±0.011     0.200±0.006     0.201±0.009
+   clean-test accuracy: noisy_labels 0.951±0.005, clean_labels_oracle 0.971±0.005, pruned_cl_prune_by_noise_rate 0.959±0.009, pruned_cl_both 0.959±0.009, pruned_argmax_disagree 0.956±0.009, pruned_random_same_k 0.947±0.002
+
+== asymmetric noise, rate 0.3 (3 seeds) ==
+   noise rate true 0.300±0.000  est 0.333±0.004  noise-matrix MAE 0.010±0.002
+   detector                         precision          recall              F1
+   cl_confident_joint             0.863±0.002     0.720±0.013     0.785±0.007
+   cl_prune_by_noise_rate         0.784±0.017     0.867±0.021     0.823±0.017
+   cl_both                        0.880±0.009     0.716±0.016     0.789±0.010
+   cl_pbnr_IN_SAMPLE_leaky        0.000±0.000     0.000±0.000     0.000±0.000
+   argmax_disagree                0.775±0.013     0.914±0.004     0.839±0.009
+   self_conf_lt_0.5               0.487±0.005     0.989±0.004     0.653±0.005
+   lowest_conf_oracle_k           0.751±0.013     0.751±0.013     0.751±0.013
+   random_same_k                  0.291±0.021     0.322±0.024     0.305±0.022
+   clean-test accuracy: noisy_labels 0.884±0.018, clean_labels_oracle 0.971±0.005, pruned_cl_prune_by_noise_rate 0.936±0.011, pruned_cl_both 0.939±0.009, pruned_argmax_disagree 0.946±0.011, pruned_random_same_k 0.845±0.018
+
+== uniform noise, rate 0.1 (3 seeds) ==
+   noise rate true 0.100±0.000  est 0.099±0.007  noise-matrix MAE 0.005±0.001
+   detector                         precision          recall              F1
+   cl_confident_joint             1.000±0.000     0.677±0.050     0.806±0.036
+   cl_prune_by_noise_rate         0.968±0.014     0.825±0.057     0.890±0.039
+   cl_both                        1.000±0.000     0.677±0.050     0.806±0.036
+   cl_pbnr_IN_SAMPLE_leaky        0.000±0.000     0.000±0.000     0.000±0.000
+   argmax_disagree                0.812±0.004     0.997±0.004     0.895±0.003
+   self_conf_lt_0.5               0.363±0.007     1.000±0.000     0.532±0.008
+   lowest_conf_oracle_k           0.939±0.019     0.939±0.019     0.939±0.019
+   random_same_k                  0.115±0.040     0.098±0.036     0.106±0.038
+   clean-test accuracy: noisy_labels 0.972±0.003, clean_labels_oracle 0.971±0.005, pruned_cl_prune_by_noise_rate 0.967±0.002, pruned_cl_both 0.970±0.001, pruned_argmax_disagree 0.964±0.003, pruned_random_same_k 0.967±0.004
+
+== uniform noise, rate 0.2 (3 seeds) ==
+   noise rate true 0.199±0.000  est 0.204±0.003  noise-matrix MAE 0.007±0.000
+   detector                         precision          recall              F1
+   cl_confident_joint             0.998±0.002     0.761±0.022     0.864±0.013
+   cl_prune_by_noise_rate         0.974±0.003     0.893±0.011     0.932±0.005
+   cl_both                        1.000±0.000     0.761±0.022     0.864±0.014
+   cl_pbnr_IN_SAMPLE_leaky        0.000±0.000     0.000±0.000     0.000±0.000
+   argmax_disagree                0.873±0.015     0.999±0.002     0.932±0.008
+   self_conf_lt_0.5               0.440±0.008     1.000±0.000     0.611±0.008
+   lowest_conf_oracle_k           0.961±0.012     0.961±0.012     0.961±0.012
+   random_same_k                  0.206±0.029     0.189±0.026     0.198±0.028
+   clean-test accuracy: noisy_labels 0.966±0.004, clean_labels_oracle 0.971±0.005, pruned_cl_prune_by_noise_rate 0.961±0.005, pruned_cl_both 0.963±0.005, pruned_argmax_disagree 0.958±0.004, pruned_random_same_k 0.956±0.004
+
+== uniform noise, rate 0.3 (3 seeds) ==
+   noise rate true 0.300±0.000  est 0.301±0.009  noise-matrix MAE 0.008±0.000
+   detector                         precision          recall              F1
+   cl_confident_joint             0.990±0.002     0.782±0.029     0.873±0.018
+   cl_prune_by_noise_rate         0.991±0.002     0.895±0.007     0.941±0.003
+   cl_both                        0.998±0.002     0.779±0.027     0.875±0.017
+   cl_pbnr_IN_SAMPLE_leaky        0.000±0.000     0.000±0.000     0.000±0.000
+   argmax_disagree                0.899±0.003     0.996±0.003     0.945±0.002
+   self_conf_lt_0.5               0.478±0.007     1.000±0.000     0.647±0.007
+   lowest_conf_oracle_k           0.966±0.002     0.966±0.002     0.966±0.002
+   random_same_k                  0.318±0.008     0.287±0.006     0.302±0.007
+   clean-test accuracy: noisy_labels 0.959±0.003, clean_labels_oracle 0.971±0.005, pruned_cl_prune_by_noise_rate 0.965±0.001, pruned_cl_both 0.964±0.005, pruned_argmax_disagree 0.952±0.004, pruned_random_same_k 0.943±0.004

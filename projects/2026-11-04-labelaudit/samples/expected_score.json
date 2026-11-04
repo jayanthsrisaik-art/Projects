@@ -1,0 +1,7 @@
+{
+  "flagged": 245,
+  "true_flips": 250,
+  "precision": 0.9061,
+  "recall": 0.888,
+  "f1": 0.897
+}

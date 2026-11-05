@@ -1,0 +1,7 @@
+seq	kind	key	wstart	wend	revision	count	sum	min	max	mean	wm	trigger_offset
+1	insert	pump-b	1035	1075	0	1	7	7	7	7.0	1075	5
+2	insert	pump-a	1000	1125	0	5	105	5	40	21.0	1180	9
+3	insert	pump-b	1130	1170	0	1	9	9	9	9.0	1180	9
+4	update	pump-a	1000	1125	1	6	204	5	99	34.0	1180	11
+5	insert	pump-b	1190	1230	0	1	11	11	11	11.0		
+6	insert	pump-a	1200	1240	0	1	1	1	1	1.0		

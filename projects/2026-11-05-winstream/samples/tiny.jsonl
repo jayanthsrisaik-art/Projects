@@ -1,0 +1,14 @@
+{"id":"a1","key":"pump-a","ts":1000,"value":10,"arrival":1001}
+{"id":"a2","key":"pump-a","ts":1030,"value":20,"arrival":1031}
+{"id":"b1","key":"pump-b","ts":1035,"value":7,"arrival":1036}
+{"id":"a3","key":"pump-a","ts":1065,"value":30,"arrival":1066}
+{"id":"a2","key":"pump-a","ts":1030,"value":20,"arrival":1070}
+{"id":"a4","key":"pump-a","ts":1085,"value":5,"arrival":1086}
+{"id":"a5","key":"pump-a","ts":1050,"value":40,"arrival":1090}
+{"id":"b2","key":"pump-b","ts":1130,"value":9,"arrival":1131}
+this line is not json
+{"id":"b3","key":"pump-b","ts":"1970-01-01T00:19:50+00:00","value":11,"arrival":1191}
+{"id":"a8","key":"pump-a","ts":1100,"value":50,"arrival":1192}
+{"id":"a6","key":"pump-a","ts":1010,"value":99,"arrival":1195}
+{"id":"a7","key":"pump-a","ts":1200,"value":1,"arrival":1201}
+{"id":"bad","key":"pump-a","ts":1205,"value":"high"}

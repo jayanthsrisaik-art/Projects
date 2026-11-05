@@ -1,0 +1,7 @@
+key	wstart	wend	count	sum	min	max	mean	revision
+pump-a	1000	1125	6	204	5	99	34.0	1
+pump-a	1200	1240	1	1	1	1	1.0	0
+pump-b	1035	1075	1	7	7	7	7.0	0
+pump-b	1130	1170	1	9	9	9	9.0	0
+pump-b	1190	1230	1	11	11	11	11.0	0
+# 5 windows, 6 changelog rows, 1 late pairs, 1 duplicates, 2 invalid

@@ -1,0 +1,29 @@
+group: Lisbon weekend (EUR), members: Ana, Ben, Chi, Dev, Eli
++ Apartment   420.00 paid by Ana  [equal] Ana 84.00, Ben 84.00, Chi 84.00, Dev 84.00, Eli 84.00
++ Car 1 fuel   61.00 paid by Ben  [equal] Ben 30.50, Chi 30.50
++ Car 2 fuel   58.30 paid by Dev  [equal] Ana 19.43, Dev 19.44, Eli 19.43
++ Dinner      187.45 paid by Chi  [shares] Ana 31.25, Ben 31.24, Chi 31.24, Dev 62.48, Eli 31.24
++ Museum       52.00 paid by Eli  [exact] Ana 26.00, Dev 13.00, Eli 13.00
++ Groceries   100.00 paid by Ana  [percent] Ana 33.33, Ben 33.33, Chi 33.34
++ Coffee       10.00 paid by Ben  [equal] Ana 3.33, Ben 3.34, Chi 3.33
+retry Dinner: status 201, replayed=True, same id=True
+edit Coffee -> 11.00: status 200 (v2) Ana 3.67, Ben 3.67, Chi 3.66; stale retry status 412
+expenses stored: 7
+balances:
+  Ana    322.32   rounding drift +0.533
+  Ben   -110.74   rounding drift -0.133
+  Chi      4.71   rounding drift -0.233
+  Dev   -120.62   rounding drift +0.333
+  Eli    -95.67   rounding drift -0.500
+  sum (minor units): 0
+settle (greedy): 4 transfers
+  Dev -> Ana 120.62
+  Ben -> Ana 110.74
+  Eli -> Ana 90.96
+  Eli -> Chi 4.71
+settle (optimal): 4 transfers
+  Ben -> Ana 110.74
+  Dev -> Ana 120.62
+  Eli -> Ana 90.96
+  Eli -> Chi 4.71
+after recording the optimal plan: Ana 0.00, Ben 0.00, Chi 0.00, Dev 0.00, Eli 0.00

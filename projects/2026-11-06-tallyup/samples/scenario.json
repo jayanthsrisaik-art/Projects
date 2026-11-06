@@ -1,0 +1,19 @@
+{
+  "group": {"name": "Lisbon weekend", "currency": "EUR"},
+  "members": ["Ana", "Ben", "Chi", "Dev", "Eli"],
+  "expenses": [
+    {"description": "Apartment", "payer": "Ana", "amount": "420.00", "split": {"kind": "equal", "members": ["Ana", "Ben", "Chi", "Dev", "Eli"]}},
+    {"description": "Car 1 fuel", "payer": "Ben", "amount": "61.00", "split": {"kind": "equal", "members": ["Ben", "Chi"]}},
+    {"description": "Car 2 fuel", "payer": "Dev", "amount": "58.30", "split": {"kind": "equal", "members": ["Dev", "Eli", "Ana"]}},
+    {"description": "Dinner", "payer": "Chi", "amount": "187.45", "split": {"kind": "shares", "values": {"Ana": 1, "Ben": 1, "Chi": 1, "Dev": 2, "Eli": 1}}},
+    {"description": "Museum", "payer": "Eli", "amount": "52.00", "split": {"kind": "exact", "values": {"Eli": "13.00", "Dev": "13.00", "Ana": "26.00"}}},
+    {"description": "Groceries", "payer": "Ana", "amount": "100.00", "split": {"kind": "percent", "values": {"Ana": "33.333", "Ben": "33.333", "Chi": "33.334"}}},
+    {"description": "Coffee", "payer": "Ben", "amount": "10.00", "split": {"kind": "equal", "members": ["Ana", "Ben", "Chi"]}}
+  ],
+  "edits": [
+    {"expense": "Coffee", "amount": "11.00"}
+  ],
+  "retries": [
+    {"expense": "Dinner", "note": "client retried after a timeout with the same Idempotency-Key"}
+  ]
+}

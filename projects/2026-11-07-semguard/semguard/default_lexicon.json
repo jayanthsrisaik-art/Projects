@@ -1,0 +1,382 @@
+{
+ "negation": [
+  "not",
+  "no",
+  "never",
+  "without",
+  "none",
+  "nothing",
+  "nobody",
+  "neither",
+  "nor"
+ ],
+ "volatile": [
+  "today",
+  "tonight",
+  "tomorrow",
+  "yesterday",
+  "now",
+  "right now",
+  "current",
+  "currently",
+  "latest",
+  "live",
+  "real-time",
+  "realtime",
+  "this week",
+  "this morning",
+  "at the moment"
+ ],
+ "polarity": {
+  "toggle": {
+   "+": [
+    "enable",
+    "turn on",
+    "switch on",
+    "activate"
+   ],
+   "-": [
+    "disable",
+    "turn off",
+    "switch off",
+    "deactivate"
+   ]
+  },
+  "add": {
+   "+": [
+    "add",
+    "create",
+    "insert",
+    "attach"
+   ],
+   "-": [
+    "remove",
+    "delete",
+    "drop",
+    "detach"
+   ]
+  },
+  "level": {
+   "+": [
+    "increase",
+    "raise",
+    "upgrade",
+    "higher",
+    "more",
+    "maximum",
+    "max"
+   ],
+   "-": [
+    "decrease",
+    "lower",
+    "downgrade",
+    "reduce",
+    "less",
+    "fewer",
+    "minimum",
+    "min"
+   ]
+  },
+  "transfer": {
+   "+": [
+    "import",
+    "upload"
+   ],
+   "-": [
+    "export",
+    "download"
+   ]
+  },
+  "io": {
+   "+": [
+    "read",
+    "load",
+    "parse",
+    "open"
+   ],
+   "-": [
+    "write",
+    "save",
+    "dump"
+   ]
+  },
+  "lock": {
+   "+": [
+    "lock",
+    "freeze",
+    "suspend"
+   ],
+   "-": [
+    "unlock",
+    "unfreeze",
+    "unsuspend",
+    "reactivate"
+   ]
+  },
+  "crypt": {
+   "+": [
+    "encrypt"
+   ],
+   "-": [
+    "decrypt"
+   ]
+  },
+  "trade": {
+   "+": [
+    "buy",
+    "purchase"
+   ],
+   "-": [
+    "sell"
+   ]
+  },
+  "order": {
+   "+": [
+    "ascending",
+    "asc",
+    "smallest first"
+   ],
+   "-": [
+    "descending",
+    "desc",
+    "largest first",
+    "reverse"
+   ]
+  },
+  "time": {
+   "+": [
+    "before"
+   ],
+   "-": [
+    "after"
+   ]
+  },
+  "run": {
+   "+": [
+    "start",
+    "begin",
+    "resume"
+   ],
+   "-": [
+    "stop",
+    "pause",
+    "halt"
+   ]
+  }
+ },
+ "terms": {
+  "language": {
+   "python": [
+    "python",
+    "py"
+   ],
+   "java": [
+    "java"
+   ],
+   "javascript": [
+    "javascript",
+    "js",
+    "node",
+    "nodejs"
+   ],
+   "typescript": [
+    "typescript",
+    "ts"
+   ],
+   "go": [
+    "golang"
+   ],
+   "rust": [
+    "rust"
+   ],
+   "sql": [
+    "sql"
+   ]
+  },
+  "plan": {
+   "free": [
+    "free"
+   ],
+   "basic": [
+    "basic",
+    "starter"
+   ],
+   "pro": [
+    "pro",
+    "professional"
+   ],
+   "enterprise": [
+    "enterprise"
+   ],
+   "team": [
+    "team plan",
+    "teams"
+   ]
+  },
+  "os": {
+   "windows": [
+    "windows"
+   ],
+   "macos": [
+    "macos",
+    "mac",
+    "osx"
+   ],
+   "linux": [
+    "linux",
+    "ubuntu"
+   ],
+   "ios": [
+    "ios",
+    "iphone",
+    "ipad"
+   ],
+   "android": [
+    "android"
+   ]
+  },
+  "format": {
+   "csv": [
+    "csv"
+   ],
+   "json": [
+    "json"
+   ],
+   "excel": [
+    "excel",
+    "xlsx"
+   ],
+   "pdf": [
+    "pdf"
+   ],
+   "xml": [
+    "xml"
+   ],
+   "parquet": [
+    "parquet"
+   ]
+  },
+  "currency": {
+   "usd": [
+    "usd",
+    "dollar",
+    "dollars"
+   ],
+   "eur": [
+    "eur",
+    "euro",
+    "euros"
+   ],
+   "gbp": [
+    "gbp",
+    "pound",
+    "pounds"
+   ],
+   "inr": [
+    "inr",
+    "rupee",
+    "rupees"
+   ],
+   "jpy": [
+    "jpy",
+    "yen"
+   ]
+  },
+  "city": {
+   "london": [
+    "london"
+   ],
+   "paris": [
+    "paris"
+   ],
+   "tokyo": [
+    "tokyo"
+   ],
+   "new york": [
+    "new york",
+    "nyc"
+   ],
+   "berlin": [
+    "berlin"
+   ],
+   "mumbai": [
+    "mumbai"
+   ],
+   "sydney": [
+    "sydney"
+   ],
+   "toronto": [
+    "toronto"
+   ]
+  },
+  "month": {
+   "jan": [
+    "january",
+    "jan"
+   ],
+   "feb": [
+    "february",
+    "feb"
+   ],
+   "mar": [
+    "march"
+   ],
+   "apr": [
+    "april",
+    "apr"
+   ],
+   "jun": [
+    "june",
+    "jun"
+   ],
+   "jul": [
+    "july",
+    "jul"
+   ],
+   "aug": [
+    "august",
+    "aug"
+   ],
+   "sep": [
+    "september",
+    "sept",
+    "sep"
+   ],
+   "oct": [
+    "october",
+    "oct"
+   ],
+   "nov": [
+    "november",
+    "nov"
+   ],
+   "dec": [
+    "december",
+    "dec"
+   ]
+  },
+  "weekday": {
+   "mon": [
+    "monday"
+   ],
+   "tue": [
+    "tuesday"
+   ],
+   "wed": [
+    "wednesday"
+   ],
+   "thu": [
+    "thursday"
+   ],
+   "fri": [
+    "friday"
+   ],
+   "sat": [
+    "saturday"
+   ],
+   "sun": [
+    "sunday"
+   ]
+  }
+ }
+}

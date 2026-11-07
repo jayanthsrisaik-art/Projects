@@ -1,0 +1,40 @@
+{"i": 0, "text": "how do I import my data from json", "key": "import_data|fmt=json", "family": "import_data", "topic": "data", "volatile": false, "contrast": "polarity"}
+{"i": 1, "text": "api quota for free accounts", "key": "rate_limit|plan=free", "family": "rate_limit", "topic": "api", "volatile": false, "contrast": "slot"}
+{"i": 2, "text": "How do I export my data as csv", "key": "export_data|fmt=csv", "family": "export_data", "topic": "data", "volatile": false, "contrast": "polarity"}
+{"i": 3, "text": "current gbp to inr rate asap", "key": "fx_rate|a=gbp|b=inr", "family": "fx_rate", "topic": "live_data", "volatile": true, "contrast": ""}
+{"i": 4, "text": "Is flight ua901 delayed right now asap", "key": "flight_delay|fl=ua901", "family": "flight_delay", "topic": "travel", "volatile": true, "contrast": ""}
+{"i": 5, "text": "monthly cost for the pro tier", "key": "plan_price|plan=pro", "family": "plan_price", "topic": "billing", "volatile": false, "contrast": "slot"}
+{"i": 6, "text": "please help: latest update on order #88310?", "key": "order_status|order=88310", "family": "order_status", "topic": "orders", "volatile": true, "contrast": ""}
+{"i": 7, "text": "what is the gbp to inr exchange rate today", "key": "fx_rate|a=gbp|b=inr", "family": "fx_rate", "topic": "live_data", "volatile": true, "contrast": ""}
+{"i": 8, "text": "turn off 2fa for my account", "key": "disable_2fa|", "family": "disable_2fa", "topic": "auth_2fa", "volatile": false, "contrast": "polarity"}
+{"i": 9, "text": "where do I switch on 2-step verification please", "key": "enable_2fa|", "family": "enable_2fa", "topic": "auth_2fa", "volatile": false, "contrast": "polarity"}
+{"i": 10, "text": "where do I sign in to my account", "key": "how_login|", "family": "how_login", "topic": "credentials", "volatile": false, "contrast": "negation"}
+{"i": 11, "text": "what is the status of order 73419 right now", "key": "order_status|order=73419", "family": "order_status", "topic": "orders", "volatile": true, "contrast": ""}
+{"i": 12, "text": "golang sort array descending.", "key": "sort_desc|lang=golang", "family": "sort_desc", "topic": "coding", "volatile": false, "contrast": "polarity"}
+{"i": 13, "text": "latest api incident status", "key": "api_status|", "family": "api_status", "topic": "api", "volatile": true, "contrast": ""}
+{"i": 14, "text": "import all my data in pdf format", "key": "import_data|fmt=pdf", "family": "import_data", "topic": "data", "volatile": false, "contrast": "polarity"}
+{"i": 15, "text": "hey, delete my account and all my data", "key": "delete_account|", "family": "delete_account", "topic": "security", "volatile": false, "contrast": "object"}
+{"i": 16, "text": "Write rows to a csv file using java", "key": "write_csv|lang=java", "family": "write_csv", "topic": "coding", "volatile": false, "contrast": "polarity"}
+{"i": 17, "text": "Turn off 2fa for my account", "key": "disable_2fa|", "family": "disable_2fa", "topic": "auth_2fa", "volatile": false, "contrast": "polarity"}
+{"i": 18, "text": "Unfreeze my account please", "key": "unlock_account|", "family": "unlock_account", "topic": "security", "volatile": false, "contrast": "polarity"}
+{"i": 19, "text": "Track order 88310 today", "key": "order_status|order=88310", "family": "order_status", "topic": "orders", "volatile": true, "contrast": ""}
+{"i": 20, "text": "how do I import my data from json", "key": "import_data|fmt=json", "family": "import_data", "topic": "data", "volatile": false, "contrast": "polarity"}
+{"i": 21, "text": "Please refund order no. 10027", "key": "refund_order|order=10027", "family": "refund_order", "topic": "orders", "volatile": false, "contrast": "slot"}
+{"i": 22, "text": "Close my account for good", "key": "delete_account|", "family": "delete_account", "topic": "security", "volatile": false, "contrast": "object"}
+{"i": 23, "text": "hey, Is there a way to import everything from excel", "key": "import_data|fmt=excel", "family": "import_data", "topic": "data", "volatile": false, "contrast": "polarity"}
+{"i": 24, "text": "latest update on order #4512", "key": "order_status|order=4512", "family": "order_status", "topic": "orders", "volatile": true, "contrast": ""}
+{"i": 25, "text": "what's the way to sign in", "key": "how_login|", "family": "how_login", "topic": "credentials", "volatile": false, "contrast": "negation"}
+{"i": 26, "text": "hey, I forgot my password, how can I reset it", "key": "reset_password|", "family": "reset_password", "topic": "credentials", "volatile": false, "contrast": "object"}
+{"i": 27, "text": "flight of 4 hours: economy or business? please", "key": "flight_class|h=4", "family": "flight_class", "topic": "travel", "volatile": false, "contrast": "slot"}
+{"i": 28, "text": "Export account data to excel", "key": "export_data|fmt=excel", "family": "export_data", "topic": "data", "volatile": false, "contrast": "polarity"}
+{"i": 29, "text": "do we fly business on 4 hour trips", "key": "flight_class|h=4", "family": "flight_class", "topic": "travel", "volatile": false, "contrast": "slot"}
+{"i": 30, "text": "export account data to excel", "key": "export_data|fmt=excel", "family": "export_data", "topic": "data", "volatile": false, "contrast": "polarity"}
+{"i": 31, "text": "hi team, turn off 2fa for my account??", "key": "disable_2fa|", "family": "disable_2fa", "topic": "auth_2fa", "volatile": false, "contrast": "polarity"}
+{"i": 32, "text": "I'd like to upgrade to free", "key": "upgrade_plan|plan=free", "family": "upgrade_plan", "topic": "billing", "volatile": false, "contrast": "polarity"}
+{"i": 33, "text": "I want to turn on two-factor authentication on my account?", "key": "enable_2fa|", "family": "enable_2fa", "topic": "auth_2fa", "volatile": false, "contrast": "polarity"}
+{"i": 34, "text": "I cannot log into my account", "key": "cannot_login|", "family": "cannot_login", "topic": "credentials", "volatile": false, "contrast": "negation"}
+{"i": 35, "text": "Please refund order no. 4521?", "key": "refund_order|order=4521", "family": "refund_order", "topic": "orders", "volatile": false, "contrast": "slot"}
+{"i": 36, "text": "login is not working for me asap", "key": "cannot_login|", "family": "cannot_login", "topic": "credentials", "volatile": false, "contrast": "negation"}
+{"i": 37, "text": "hello! Pro plan pricing", "key": "plan_price|plan=pro", "family": "plan_price", "topic": "billing", "volatile": false, "contrast": "slot"}
+{"i": 38, "text": "latest gbp/jpy conversion rate", "key": "fx_rate|a=gbp|b=jpy", "family": "fx_rate", "topic": "live_data", "volatile": true, "contrast": ""}
+{"i": 39, "text": "sort a list in increasing oredr in java", "key": "sort_asc|lang=java", "family": "sort_asc", "topic": "coding", "volatile": false, "contrast": "polarity"}

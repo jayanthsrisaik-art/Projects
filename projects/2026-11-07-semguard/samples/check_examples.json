@@ -1,0 +1,16 @@
+[
+  {"cached": "How do I reset my password?", "query": "help me reset my password please", "expect": "hit", "why": "paraphrase"},
+  {"cached": "how do I read a csv file in python", "query": "Python code to load a CSV", "expect": "miss", "why": "KNOWN LIMITATION: few shared words, lexical embedder similarity too low"},
+  {"cached": "can I get a refund for order 4521", "query": "please refund order no. 4521", "expect": "hit", "why": "'no.' before a number is not negation"},
+  {"cached": "can I take 5 days of vacation in a row", "query": "can I take five days of vacation in a row", "expect": "hit", "why": "number words"},
+  {"cached": "can I get a refund for order 4521", "query": "can I get a refund for order 4512", "expect": "miss", "why": "different order number"},
+  {"cached": "what does error 404 mean", "query": "what does error 500 mean", "expect": "miss", "why": "different error code"},
+  {"cached": "business class policy for 4-hour flights", "query": "business class policy for 6-hour flights", "expect": "miss", "why": "number glued to unit"},
+  {"cached": "how do I enable two-factor authentication", "query": "how do I disable two-factor authentication", "expect": "miss", "why": "polarity"},
+  {"cached": "how do I export my data as csv", "query": "how do I import my data from csv", "expect": "miss", "why": "polarity"},
+  {"cached": "how do I read a csv file in python", "query": "how do I read a csv file in java", "expect": "miss", "why": "language term"},
+  {"cached": "how much does the pro plan cost", "query": "how much does the basic plan cost", "expect": "miss", "why": "plan term"},
+  {"cached": "how do I log in to my account", "query": "why can't I log in to my account", "expect": "miss", "why": "negation"},
+  {"cached": "what's the weather in london", "query": "what's the weather in london today", "expect": "bypass", "why": "time-sensitive"},
+  {"cached": "how do I reset my password", "query": "how do I change my username", "expect": "miss", "why": "low similarity"}
+]

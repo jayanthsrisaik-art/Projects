@@ -1,0 +1,387 @@
+{
+  "split": {
+    "dev_topics": [
+      "api",
+      "billing",
+      "credentials",
+      "travel"
+    ],
+    "test_topics": [
+      "auth_2fa",
+      "coding",
+      "data",
+      "leave",
+      "live_data",
+      "orders",
+      "security"
+    ],
+    "dev_queries": 1043,
+    "test_queries": 1957
+  },
+  "target_precision": 0.99,
+  "policies": {
+    "exact_match": {
+      "dev": {
+        "queries": 1043,
+        "hits": 517,
+        "correct_hits": 365,
+        "wrong_hits": 152,
+        "bypassed": 0,
+        "llm_calls": 526,
+        "reusable": 746,
+        "hit_rate": 0.4957,
+        "hit_precision": 0.706,
+        "recall_of_reusable": 0.4893,
+        "wrong_per_1k_queries": 145.73,
+        "wrong_by_kind": {
+          "stale_volatile": 152
+        }
+      },
+      "test": {
+        "queries": 1957,
+        "hits": 1070,
+        "correct_hits": 845,
+        "wrong_hits": 225,
+        "bypassed": 0,
+        "llm_calls": 887,
+        "reusable": 1474,
+        "hit_rate": 0.5468,
+        "hit_precision": 0.7897,
+        "recall_of_reusable": 0.5733,
+        "wrong_per_1k_queries": 114.97,
+        "wrong_by_kind": {
+          "stale_volatile": 225
+        }
+      }
+    },
+    "semantic_only": {
+      "calibration": {
+        "threshold": 0.99,
+        "target_met_on_dev": false
+      },
+      "dev": {
+        "queries": 1043,
+        "hits": 750,
+        "correct_hits": 545,
+        "wrong_hits": 205,
+        "bypassed": 0,
+        "llm_calls": 293,
+        "reusable": 746,
+        "hit_rate": 0.7191,
+        "hit_precision": 0.7267,
+        "recall_of_reusable": 0.7306,
+        "wrong_per_1k_queries": 196.55,
+        "wrong_by_kind": {
+          "stale_volatile": 205
+        }
+      },
+      "test": {
+        "queries": 1957,
+        "hits": 1445,
+        "correct_hits": 1138,
+        "wrong_hits": 307,
+        "bypassed": 0,
+        "llm_calls": 512,
+        "reusable": 1474,
+        "hit_rate": 0.7384,
+        "hit_precision": 0.7875,
+        "recall_of_reusable": 0.772,
+        "wrong_per_1k_queries": 156.87,
+        "wrong_by_kind": {
+          "stale_volatile": 307
+        }
+      }
+    },
+    "semantic_plus_volatile": {
+      "calibration": {
+        "threshold": 0.86,
+        "target_met_on_dev": true
+      },
+      "dev": {
+        "queries": 1043,
+        "hits": 576,
+        "correct_hits": 575,
+        "wrong_hits": 1,
+        "bypassed": 255,
+        "llm_calls": 467,
+        "reusable": 746,
+        "hit_rate": 0.5523,
+        "hit_precision": 0.9983,
+        "recall_of_reusable": 0.7708,
+        "wrong_per_1k_queries": 0.96,
+        "wrong_by_kind": {
+          "sibling_negation": 1
+        }
+      },
+      "test": {
+        "queries": 1957,
+        "hits": 1211,
+        "correct_hits": 1151,
+        "wrong_hits": 60,
+        "bypassed": 428,
+        "llm_calls": 746,
+        "reusable": 1474,
+        "hit_rate": 0.6188,
+        "hit_precision": 0.9505,
+        "recall_of_reusable": 0.7809,
+        "wrong_per_1k_queries": 30.66,
+        "wrong_by_kind": {
+          "sibling_polarity": 49,
+          "slot_value": 10,
+          "stale_volatile": 1
+        }
+      }
+    },
+    "guarded": {
+      "calibration": {
+        "threshold": 0.68,
+        "target_met_on_dev": true
+      },
+      "dev": {
+        "queries": 1043,
+        "hits": 639,
+        "correct_hits": 633,
+        "wrong_hits": 6,
+        "bypassed": 255,
+        "llm_calls": 404,
+        "reusable": 746,
+        "hit_rate": 0.6127,
+        "hit_precision": 0.9906,
+        "recall_of_reusable": 0.8485,
+        "wrong_per_1k_queries": 5.75,
+        "wrong_by_kind": {
+          "sibling_polarity": 2,
+          "sibling_slot": 4
+        }
+      },
+      "test": {
+        "queries": 1957,
+        "hits": 1336,
+        "correct_hits": 1316,
+        "wrong_hits": 20,
+        "bypassed": 428,
+        "llm_calls": 621,
+        "reusable": 1474,
+        "hit_rate": 0.6827,
+        "hit_precision": 0.985,
+        "recall_of_reusable": 0.8928,
+        "wrong_per_1k_queries": 10.22,
+        "wrong_by_kind": {
+          "sibling_polarity": 18,
+          "stale_volatile": 2
+        }
+      }
+    }
+  },
+  "ablation": {
+    "without_literals": {
+      "dev": {
+        "hit_rate": 0.6357,
+        "hit_precision": 0.8627,
+        "recall_of_reusable": 0.7668,
+        "wrong_hits": 91,
+        "wrong_by_kind": {
+          "sibling_polarity": 2,
+          "sibling_slot": 4,
+          "slot_value": 85
+        }
+      },
+      "test": {
+        "hit_rate": 0.6944,
+        "hit_precision": 0.9029,
+        "recall_of_reusable": 0.8324,
+        "wrong_hits": 132,
+        "wrong_by_kind": {
+          "sibling_polarity": 18,
+          "slot_value": 112,
+          "stale_volatile": 2
+        }
+      }
+    },
+    "without_negation": {
+      "dev": {
+        "hit_rate": 0.6136,
+        "hit_precision": 0.9469,
+        "recall_of_reusable": 0.8123,
+        "wrong_hits": 34,
+        "wrong_by_kind": {
+          "sibling_negation": 28,
+          "sibling_polarity": 2,
+          "sibling_slot": 4
+        }
+      },
+      "test": {
+        "hit_rate": 0.6827,
+        "hit_precision": 0.985,
+        "recall_of_reusable": 0.8928,
+        "wrong_hits": 20,
+        "wrong_by_kind": {
+          "sibling_polarity": 18,
+          "stale_volatile": 2
+        }
+      }
+    },
+    "without_polarity": {
+      "dev": {
+        "hit_rate": 0.6155,
+        "hit_precision": 0.9751,
+        "recall_of_reusable": 0.8391,
+        "wrong_hits": 16,
+        "wrong_by_kind": {
+          "sibling_polarity": 12,
+          "sibling_slot": 4
+        }
+      },
+      "test": {
+        "hit_rate": 0.6929,
+        "hit_precision": 0.8481,
+        "recall_of_reusable": 0.7802,
+        "wrong_hits": 206,
+        "wrong_by_kind": {
+          "sibling_polarity": 204,
+          "stale_volatile": 2
+        }
+      }
+    },
+    "without_terms": {
+      "dev": {
+        "hit_rate": 0.6424,
+        "hit_precision": 0.8358,
+        "recall_of_reusable": 0.7507,
+        "wrong_hits": 110,
+        "wrong_by_kind": {
+          "sibling_polarity": 2,
+          "sibling_slot": 4,
+          "slot_value": 104
+        }
+      },
+      "test": {
+        "hit_rate": 0.7026,
+        "hit_precision": 0.8415,
+        "recall_of_reusable": 0.7849,
+        "wrong_hits": 218,
+        "wrong_by_kind": {
+          "sibling_polarity": 15,
+          "slot_value": 200,
+          "stale_volatile": 3
+        }
+      }
+    },
+    "without_volatile": {
+      "dev": {
+        "hit_rate": 0.8322,
+        "hit_precision": 0.7293,
+        "recall_of_reusable": 0.8485,
+        "wrong_hits": 235,
+        "wrong_by_kind": {
+          "sibling_polarity": 2,
+          "sibling_slot": 4,
+          "stale_volatile": 229
+        }
+      },
+      "test": {
+        "hit_rate": 0.8666,
+        "hit_precision": 0.7759,
+        "recall_of_reusable": 0.8928,
+        "wrong_hits": 380,
+        "wrong_by_kind": {
+          "sibling_polarity": 18,
+          "stale_volatile": 362
+        }
+      }
+    }
+  },
+  "fixed_threshold": {
+    "0.68": {
+      "semantic_only": {
+        "hit_rate": 0.9188,
+        "hit_precision": 0.5278,
+        "recall_of_reusable": 0.6438,
+        "wrong_hits": 849,
+        "wrong_by_kind": {
+          "sibling_polarity": 155,
+          "slot_value": 297,
+          "stale_volatile": 397
+        }
+      },
+      "guarded": {
+        "hit_rate": 0.6827,
+        "hit_precision": 0.985,
+        "recall_of_reusable": 0.8928,
+        "wrong_hits": 20,
+        "wrong_by_kind": {
+          "sibling_polarity": 18,
+          "stale_volatile": 2
+        }
+      }
+    },
+    "0.70": {
+      "semantic_only": {
+        "hit_rate": 0.9131,
+        "hit_precision": 0.5187,
+        "recall_of_reusable": 0.6289,
+        "wrong_hits": 860,
+        "wrong_by_kind": {
+          "sibling_polarity": 170,
+          "slot_value": 298,
+          "stale_volatile": 392
+        }
+      },
+      "guarded": {
+        "hit_rate": 0.6791,
+        "hit_precision": 0.9857,
+        "recall_of_reusable": 0.8887,
+        "wrong_hits": 19,
+        "wrong_by_kind": {
+          "sibling_polarity": 17,
+          "stale_volatile": 2
+        }
+      }
+    },
+    "0.80": {
+      "semantic_only": {
+        "hit_rate": 0.8252,
+        "hit_precision": 0.6718,
+        "recall_of_reusable": 0.7361,
+        "wrong_hits": 530,
+        "wrong_by_kind": {
+          "sibling_polarity": 99,
+          "slot_value": 90,
+          "stale_volatile": 341
+        }
+      },
+      "guarded": {
+        "hit_rate": 0.6306,
+        "hit_precision": 0.9943,
+        "recall_of_reusable": 0.8324,
+        "wrong_hits": 7,
+        "wrong_by_kind": {
+          "sibling_polarity": 6,
+          "stale_volatile": 1
+        }
+      }
+    },
+    "0.90": {
+      "semantic_only": {
+        "hit_rate": 0.769,
+        "hit_precision": 0.7648,
+        "recall_of_reusable": 0.7809,
+        "wrong_hits": 354,
+        "wrong_by_kind": {
+          "sibling_polarity": 31,
+          "stale_volatile": 323
+        }
+      },
+      "guarded": {
+        "hit_rate": 0.604,
+        "hit_precision": 0.9932,
+        "recall_of_reusable": 0.7965,
+        "wrong_hits": 8,
+        "wrong_by_kind": {
+          "sibling_polarity": 7,
+          "stale_volatile": 1
+        }
+      }
+    }
+  }
+}
